@@ -1,0 +1,820 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face{
+    font-family: droidSerifBold;
+    src: url(/assets/fonts/droid-serif/DroidSerif-Bold.ttf)
+}
+ 
+@font-face{
+    font-family: droidSerifBoldItalic;
+    src: url(/assets/fonts/droid-serif/DroidSerif-BoldItalic.ttf)
+}
+
+@font-face{
+    font-family: droidSerifItalic;
+    src: url(/assets/fonts/droid-serif/DroidSerif-Italic.ttf)
+}
+
+@font-face{
+    font-family: droidSerif;
+    src: url(/assets/fonts/droid-serif/DroidSerif.ttf)
+}
+
+/*OPEN SANS*/
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800*/
+
+/*.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/
+
+/*CLASES ÚTILES*/
+main, header, footer{
+    max-width: 1920px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.w100{
+    width:100%;
+}
+
+.w90{
+    width: 90%;
+}
+
+.w80{
+    width: 80%;
+}
+
+.w78{
+    width: 78%;
+}
+
+.w66{
+    width: 66%;
+}
+
+.w60{
+    width: 60%;
+}
+
+.w40{
+    width: 40%;
+}
+
+.w45{
+    width: 45%;
+}
+
+.w48-7{
+    width: 48.7%;
+}
+
+.w32{
+    width: 32%;
+}
+
+.w25{
+    width: 25%;
+}
+
+.w75{
+    width: 75%;
+}
+
+.w15{
+    width: 15%;
+}
+
+.w20{
+    width: 20%;
+}
+
+.w23{
+    width: 23%;
+}
+
+.w12_5{
+    width: 12.5%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.vh100{
+    min-height: 100vh;
+}
+
+.vh80{
+    min-height: 80vh;
+}
+
+.vh60{
+    min-height: 60vh;
+}
+
+.vh{
+    min-height: 50vh;
+}
+
+.hForms{
+    height: 3.5em;
+}
+
+.h20{
+    height: 20em;
+}
+
+.h24{
+    height: 24em;
+}
+
+.h8{
+    height: 8em;
+}
+
+.h50{
+    height: 50%;
+}
+
+.h60{
+    height: 60%;
+}
+
+.h80{
+    height: 80%;
+}
+
+.h90{
+    height: 90%;
+}
+
+.h100{
+    height: 100%;
+}
+
+.df{
+    display: flex;
+}
+
+.secciones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chicos{ /*textos chiquitos de colores*/
+    font-family: "Open Sans";
+    font-size: 0.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1.4em;
+    margin-bottom: 1em;
+    letter-spacing: 0.2em;
+}
+
+.titPrincipal{
+    font-family: droidSerif;
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.titNoTanPrincipal{
+    font-family: droidSerif;
+    font-size: 2.5em;
+    font-weight: 200;
+}
+
+.titulos{
+    font-family: droidSerif;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.titIntermedio{
+    font-family: droidSerif;
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.subtitulos{
+    font-family: droidSerif;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.parrafoTitulo{
+    font-family: droidSerifItalic;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.parrafos{
+    font-family: "Open Sans";
+    font-size: 0.8em;
+    line-height: 1.7em;
+}
+
+.parrafosMedianos{
+    font-family: "Open Sans";
+    font-size: 0.9em;
+    line-height: 2.1em;
+    font-weight: 500;
+}
+
+.parrafitos{
+    font-family: "Open Sans";
+    font-size: 0.65em;
+    font-weight: 500;
+}
+
+.quote{
+    border-left: 3px solid;
+    font-family: droidSerifItalic;
+    font-size: 1.3em;
+}
+
+.lineHeight{
+    line-height: 1.5em;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.columna{
+    flex-direction: column;
+}
+
+.centerX{
+    justify-content: center;
+}
+
+.centerY{
+    align-items: center;
+}
+
+.spaceb{
+    justify-content: space-between;
+}
+
+.spacea{
+    justify-content: space-around;
+}
+
+.spacee{
+    justify-content: space-evenly;
+}
+
+.fStart{
+    justify-content: flex-start;
+}
+
+.fEnd{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.taco{
+    flex-wrap: wrap;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.columna, .centerX, .centerY, .spaceb, .fStart, .fEnd, .titulos, .secciones{
+    display: flex;
+}
+
+.altura12{
+    height: 12em;
+}
+
+img{
+    width: 100%;
+}
+
+.redondita{
+    width: 2em;
+    border-radius: 40em;
+    margin: 1em;
+    margin-right: 1em;
+}
+
+.divisor{
+    border-right: 0.2px solid grey;
+    margin: 1em;
+    height: 1.5em;
+}
+
+.bordeVioleta{
+    border: 3px solid purple;
+}
+
+.bordeVerde{
+    border:  3px solid green;
+}
+
+.bordeNaranja{
+    border: 3px solid orange;
+}
+
+.bordeRojo{
+    border: 3px solid red;
+}
+
+.bordeRadious50{
+    border-radius: 50%;
+}
+
+.marginLista{
+    margin-left: 3em;
+}
+
+.marginLeft07{
+    margin-left: 1em;
+}
+
+.margin07{
+    margin: 0.7em;
+}
+
+.margin1{
+    margin: 1em;
+}
+
+.margin4{
+    margin: 4.5em;
+}
+
+.margin5{
+    margin: 7em;
+}
+
+.marginTop4{
+    margin-top: 4em;
+}
+
+.marginTL{
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+.posicionAb{
+    position: absolute;
+}
+
+.posicionRel{
+    position: relative;
+}
+
+.objFit{
+    object-fit: cover;
+}
+
+.fitContent{
+    width: fit-content;
+}
+
+.separarLetras{
+    letter-spacing: 0.25em;
+}
+
+.granDivisor{
+    border: 0.1px solid rgb(206, 205, 205);
+}
+
+.items{
+    list-style: disc;
+}
+
+.izq strong{
+    font-style: italic;
+    margin-bottom: 0.4em;
+    margin-left: 0.4em;
+}
+
+/*COLORES*/
+
+.colorNegro{
+    color: black;
+}
+
+.colorBlanco{
+    color: white;
+}
+
+.colorGris{
+    color: gray;
+}
+
+.colorNaranja{
+    color: orange;
+}
+
+.colorVerde{
+    color: #9fbf73;
+}
+
+.colorVioleta{
+    color: #9689ce;
+}
+
+.fondoVioleta{
+    background-color: #9689ce;
+}
+
+.fondoNegro{
+    background-color: black;
+}
+
+.fondoBlanco{
+    background-color: white;
+}
+
+.fondoNaranja{
+    background-color: #e9aa70;
+}
+
+.fondoVerde{
+    background-color: #9fbf73;
+}
+
+.fondoGris{
+    background-color: #888888;
+}
+
+.opacidadBaja{
+    opacity: 15%;
+}
+
+/*BOTONES*/
+
+.fontBotones{
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.botonRedondo{
+    border-radius: 30%;
+}
+
+.paddingBotones{
+    padding: 1em;
+}
+
+.bottomNegro{
+    border-bottom: 1px solid black;
+}
+
+/*ÍCONOS*/
+
+.hIconos{
+    height: 2em;
+}
+
+.cajaIconos{
+    right: 0;
+    bottom: 70;
+}
+
+.cajaIconos a:hover{
+    background-color: #dad8d86c;
+}
+
+.paddingIconos{
+    padding: 0.5em;
+}
+
+/*FORMS*/
+
+.sinBorde{
+    border: none;
+}
+
+.fondoForms {
+    background-color: rgba(128, 128, 128, 0.132);
+}
+
+::placeholder{
+    font-family: "Open Sans";
+    font-size: 1em;
+}
+
+input{
+    outline: none; 
+    padding: 1.2em;
+}
+
+
+
+/*LINEAS*/
+
+.linea{
+    border-bottom: solid 0.16em;
+    width: 6em;
+}
+
+/*BANNERS*/
+
+.caract-Banner{
+    background-position:center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.bannerSimple{
+    background-position:center;
+    background-size: cover;
+}
+
+ 
+/*FIN CLASES ÚTILES*/
+
+/*HEADER*/
+header{
+    height: 12%;
+    padding: 1em 0em; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul li a:hover{
+    color: #888888;     
+}
+
+/*MAIN*/ 
+
+main section{
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.slider{
+    background-image:url("/assets/imgs/bolsa-plantas.jpg");
+    height: 90vh;
+}
+
+/*PORTFOLIO*/ 
+
+.tercio{
+    margin-top: 4em;
+}
+
+/*textos chicos de colores*/ 
+
+.branding{
+    color: #e7759c;
+}
+
+/*SECTION "SIMPLE"*/
+
+.divSimple{
+    width: 34em;
+}
+.cuadradoGris{
+    border: 12px solid #f6f6f6;
+    height: 16em;
+    width: 24em;
+}
+
+/*SECTION "POWERFUL"*/
+.titulos strong{
+    font-style: italic;
+    margin-right: 0.4em;
+}
+
+/*SECTION LOGOS*/
+
+.grupoLogos{
+    height: 10em;
+}
+
+.logos {
+    width: 7em;
+} 
+
+/*CUSTOMERS ABOUT US*/
+
+.custAboutUs strong{
+    font-style: italic;
+    margin-right: 0.4em;
+}
+
+.redonda{
+    width: 5em;
+    border-radius: 50%;
+}
+
+#persona::before {
+    content: "";
+    display: inline-block;
+    width: 2em; 
+    height: 2px; 
+    background-color: black;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em 
+}
+
+/*LETS GET IN TOUCH*/
+
+.cajaBordeGris{
+    border: 1px solid grey;
+}
+
+/*SERVICES WE CAN PROVIDE*/
+
+
+
+.servicio{
+    height: 9em;
+}
+
+.redondel{
+    border-radius: 50%;
+    border: 1px solid rgb(189, 188, 188);
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.redondo{
+    border-radius: 50%;
+    border: 1px solid rgb(189, 188, 188);
+    width: 4em;
+    height: auto;
+}
+
+.vectores{
+    padding: 1em;
+}
+
+/*LETS GET IN TOUCH*/
+
+.hIconos2{
+    height: 2.1em;
+}
+
+.lineaTercio{
+    border-bottom: 0.1em solid rgb(163, 163, 163);
+    width: 100%;
+}
+
+/*FOOTER*/
+
+.lineaGris{
+    border-bottom: 0.001px solid rgb(210, 209, 209);
+}
+
+.textoFooter{
+    font-family: "Open Sans";
+    font-size: 0.7em;
+}
+
+.submitFlechaNegra{
+    background-image: url("/assets/imgs/iconos/flecha.svg");
+}
+
+.submitFlechaBlanca{
+    background-image: url("/assets/imgs/iconos/flecha-blanca.svg");
+}
+
+.submitFlechaCaract{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.8em;
+    width: 4em;
+}
+
+.navs{
+    height: 15em;
+}
+
+.navs ul{
+    height: 70%;
+    line-height: 1.5em;
+    margin-top: 0.8em;
+}
+
+/*ABOUT.HTML*/
+.bannerAbout{
+    background-image:url("/assets/imgs/sala-comun-about.jpg"); 
+}
+
+.achicarFlecha{
+    width: 0.8em;
+}
+
+.ruta{
+    width: 8em;
+    bottom: 0;
+    right: 0;
+}
+
+.galeriaLogos{
+    height: 6em;
+}
+
+.hireUs{
+    height: 4.5em;
+    width: 96%;
+    padding: 2em;
+}
+
+.textoHireUs{
+    font-family: "Open Sans";
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.corazon{
+    width: 13%;
+    opacity: 0.4;
+    margin-left: 10%;
+    margin-right: 4%;
+}
+
+.corazonTexto{
+    padding-top: 6%;
+}
+
+.tresCajas{
+    min-height: 24vh;   
+}
+
+.paddingL{
+    padding-left: 4%;
+}
+
+.paddingR{
+    padding-right: 4%;
+}
+
+/*SINGLE WORK*/
+
+.bannerSingle{
+    background-image: url(/assets/imgs/cuadro.jpg);
+}
+
+.viewLive{
+    top: 85%;
+    left: 90%;
+}
+
+/*CONTACT*/
+.bannerContact{
+    background-image:url("/assets/imgs/chica-fotografa.jpg"); 
+}
+
+/*BLOG ITEM*/
+
+.bannerBlogItem{
+    background-image: url("/assets/imgs/madre-e-hija.jpg");
+}
+
+/*BLOG*/
+.bannerBlog{
+    background-image:url("/assets/imgs/bolsa-plantas.jpg"); 
+}
+
+.navFooter{
+    right: 0;
+}
+
+/*PORTFOLIO*/
+
+.bannerPortfolio{
+    background-image: url("/assets/imgs/bolsa-plantas.jpg");
+}
+
+/*MEDIA QUERY*/  
+
+@media (min-width:992px){
+
+}
+
+@media (min-width:650px){
+     
+}
