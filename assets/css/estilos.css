@@ -608,7 +608,7 @@ main section{
 /*SECTION LOGOS*/
 
 .grupoLogos{
-    height: 10em;
+    min-height: 10em;
 }
 
 .logos {
@@ -811,7 +811,64 @@ main section{
 
 /*MEDIA QUERY*/  
 
-@media (min-width:992px){
+@media (max-width:992px){
+
+    .w100q{
+        width: 100%;
+    }
+
+    .w90q{
+        width: 90%;
+    }
+
+    .w50q{
+        width: 50%;
+    }
+
+    .w45q{
+        width: 45%;
+    }
+
+    .w30q{
+        width: 30%;
+    }
+
+    .vh90q{
+        height: 80vh;
+    }
+
+    .vh50q{
+        min-height: 50vh;
+    }
+
+    .spaceAq{
+        justify-content: space-around;
+    }
+
+    .dfQ{
+        display: flex;
+    }
+
+    .columnaQ{
+        flex-direction: column;
+    }
+
+    .tacoQ{
+        flex-wrap: wrap;
+    }
+
+    .slider{
+        height: 60vh;
+    }
+
+    .powerfulUI{
+        border: 3px solid #9fbf73;
+    }
+
+    .logosQ{
+        height: 20em;
+    }
+ 
 
 }
 
