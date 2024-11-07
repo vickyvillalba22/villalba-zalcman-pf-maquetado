@@ -572,7 +572,7 @@ main section{
 }
 
 .slider{
-    background-image:url("/assets/imgs/bolsa-plantas.jpg");
+    background-image:url("../imgs/bolsa-plantas.jpg");
     height: 90vh;
 }
 
@@ -872,6 +872,8 @@ main section{
 
 }
 
-@media (min-width:650px){
-     
+@media (max-width:650px){
+    .tercio{
+        width: 90%;
+    }
 }
