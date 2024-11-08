@@ -311,6 +311,7 @@ body{
 
 img{
     width: 100%;
+    height: auto;
 }
 
 .redondita{
@@ -795,6 +796,10 @@ main section{
 }
 
 /*BLOG*/
+.displayTable{
+    display: table-cell;
+}
+
 .bannerBlog{
     background-image:url("/assets/imgs/bolsa-plantas.jpg"); 
 }
@@ -873,7 +878,39 @@ main section{
 }
 
 @media (max-width:650px){
-    .tercio{
+    .header{
+        flex: none;
+    }
+    .w90m{
         width: 90%;
     }
+    .dfm{
+        display: flex;
+    }
+    .flexdcolm{
+        flex-direction: column;
+    }
+    .alignitemsm{
+        align-items: center;
+    }
+    .justifycontentcm{
+        justify-content: center;
+    }
+    .w100m{
+        width: 100%;
+    }
+    .bordeNaranjam{
+        border: 3px solid orange;
+    }
+    .vh14m{
+        height:14vh
+    }
+    .spacebm{
+        justify-content: space-between;
+    }
+    .textalignm{
+        text-align: center;
+    }
+    
+
 }
