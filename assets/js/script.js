@@ -1,40 +1,40 @@
-/*let carrusel=[
+let carrusel=[
     {
-        imagenFondo: "assets/imgs/bolsa-plantas.jpg",
-        subtitulo: a,
-        titulo:    a ,
-        descripcion: a,
-        textoBoton: a,
+        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        subtitulo: "deisgn & branding",
+        titulo:    "We are Floria Agency" ,
+        descripcion: "hola",
+        textoBoton: "boton",
     },
     {
-        imagenFondo: "assets/imgs/bolsa-plantas.jpg",
-        subtitulo:  a,
-        titulo:    a ,
-        descripcion: a,
-        textoBoton: a,
+        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        subtitulo: "deisgn & branding",
+        titulo:    "We are Floria Agency" ,
+        descripcion: "hola",
+        textoBoton: "boton",
     },
     {
-        imagenFondo: "assets/imgs/bolsa-plantas.jpg",
-        subtitulo:  a,
-        titulo:    a ,
-        descripcion: a,
-        textoBoton: a,
+        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        subtitulo: "deisgn & branding",
+        titulo:    "We are Floria Agency" ,
+        descripcion: "hola",
+        textoBoton: "boton",
     }  
 ]
 
 let currentFoto=0;
 
-let banner=document.getElementById("slider");
+let banner = document.getElementById("sliderA");
 updateBack()
 
+
 function updateBack(){
-    banner.style.backgroundImage="carrusel[i].imagenFondo"
+    console.log(carrusel);
+    banner.style.backgroundImage = carrusel[0].imagenFondo;
+    /*let chico = document.createElement("h3");
+    chico.innerHTML = carrusel[currentFoto].subtitulo;
+    console.log(chico);
+    chico.classList.add("chicos");
+    banner.appendChild(chico);*/
 }
 
-
-
-
-for(let i=0; i<3; i++){
-
-    
-}*/
