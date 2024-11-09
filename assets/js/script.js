@@ -28,26 +28,18 @@ let banner = document.getElementById("sliderA");
 let botonIzq = document.getElementById("izquierda");
 let botonDer = document.getElementById("derecha");
 
-updateBack()
-
-function updateBack(){
-    //img de fondo
-    banner.style.backgroundImage = carrusel[0].imagenFondo;
-
-    //div que agrupa todo
+   //div que agrupa todo
     let divBanner = document.createElement("div");
     divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m",);
     banner.appendChild(divBanner);
 
     //subtitulo
     let chico = document.createElement("h3");
-    chico.innerHTML = carrusel[currentFoto].subtitulo;
     chico.classList.add("chicos");
     divBanner.appendChild(chico);
 
     //titulo principal
     let titPrincipal = document.createElement("h1");
-    titPrincipal.innerHTML = carrusel[currentFoto].titulo;
     titPrincipal.classList.add("titPrincipal");
     divBanner.appendChild(titPrincipal);
 
@@ -58,15 +50,29 @@ function updateBack(){
 
     //descripcion
     let descripcion = document.createElement("p");
-    descripcion.innerHTML = carrusel[currentFoto].descripcion;
     descripcion.classList.add("parrafos");
     divBanner.appendChild(descripcion);
 
     //boton !! capaz hay que ponerle hacia donde va
     let botonBanner = document.createElement("button");
-    botonBanner.innerHTML = carrusel[currentFoto].textoBoton;
     botonBanner.classList.add("paddingBotones", "fondoBlanco", "fontBotones", "sinBorde", "fitContent");
     divBanner.appendChild(botonBanner);
+
+updateBack()
+
+function updateBack(){
+    
+    //img de fondo
+    banner.style.backgroundImage = carrusel[currentFoto].imagenFondo;
+
+    chico.innerHTML = carrusel[currentFoto].subtitulo;
+
+    titPrincipal.innerHTML = carrusel[currentFoto].titulo;
+
+    descripcion.innerHTML = carrusel[currentFoto].descripcion;
+
+    botonBanner.innerHTML = carrusel[currentFoto].textoBoton;
+
 }
 
 function siguiente(){
