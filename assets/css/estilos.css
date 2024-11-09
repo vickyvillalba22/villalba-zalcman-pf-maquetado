@@ -414,6 +414,22 @@ img{
     margin-left: 0.4em;
 }
 
+.masBoton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    color:black;
+    width: 4em;
+    height: 4em;
+    transition: opacity 0.3s;
+}
+
+.oculto {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
 /*COLORES*/
 
 .colorNegro{
@@ -813,6 +829,7 @@ main section{
 .bannerPortfolio{
     background-image: url("/assets/imgs/bolsa-plantas.jpg");
 }
+
 
 /*MEDIA QUERY*/  
 
