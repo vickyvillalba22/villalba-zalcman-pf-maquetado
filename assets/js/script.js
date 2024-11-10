@@ -20,7 +20,7 @@ let carrusel=[
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         textoBoton: "See Case Study"
     }  
-]
+];
 
 let currentFoto=0;
 
@@ -213,6 +213,122 @@ function generarPortfolio(){
 }
 
 generarPortfolio()
+
+
+/*CUSTOMERS ABOUT US*/
+
+let customers = [
+    {
+        imagen: "/assets/imgs/chica-pelirroja.jpg",
+        comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
+        nombre: "Sophia Allison",  
+        cargo: "- CEO of Marco Inc.",
+        color: "fondoNaranja",
+        linea: "colorNaranja"
+    },
+    {
+        imagen: "/assets/imgs/chico-lentes.jpg",
+        comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
+        nombre: "JOSEPH BLAKE",
+        cargo: "- Designer at Elastic Themes",
+        color: "fondoVioleta",
+        linea: "colorVioleta",
+    },
+    {
+        imagen: "/assets/imgs/chica-asiatica.jpg",
+        comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
+        nombre: "EVELYN WALTERS" , 
+        cargo: "- Founder of Uno Agency",
+        color: "fondoRosa",
+        linea: "colorRosa"
+    }
+];
+
+//creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales.
+let contenedor = document.createElement("div");
+contenedor.setAttribute("id", "contCustomers");
+contenedor.classList.add("df", "columna", "centerX", "centerY");
+
+let cuadrado = document.createElement("div");
+cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel");
+contenedor.appendChild(cuadrado);
+
+let customerTotal = document.createElement("div");
+customerTotal.classList.add("posicionAb", "df", "columna", "centerX", "centerY", "h50", "w40", "spacea");
+contenedor.appendChild(customerTotal);
+
+let image = document.createElement("img");
+image.classList.add("redonda");
+
+let comment = document.createElement("p");
+comment.classList.add("parrafoTitulo");
+
+let linea = document.createElement("div");
+linea.classList.add("linea");
+
+let datosCliente = document.createElement("div");
+datosCliente.setAttribute("class", "df");
+let nombre = document.createElement("h4");
+nombre.classList.add("parrafos");
+let cargo = document.createElement("h4");
+cargo.classList.add("parrafos", "colorGris");
+datosCliente.append(nombre, cargo);
+
+customerTotal.append(image, comment, linea, datosCliente);
+
+let customersAboutUs = document.getElementById("custAboutUs");
+customersAboutUs.appendChild(contenedor);
+
+//botones
+let botonAnt = document.getElementById("anterior");
+let botonSig = document.getElementById("siguiente");
+
+//defino una variable que representa la posicion en el array.
+let currentClient = 0;
+
+//llamo a la función de actualizar contenido para que ya cargue lo que se ve primero.
+updateClient();
+
+//en esta funcion reemplazo el contenido según en qué posicion del recorrido del array esté currentClient. Y pongo clases específicas, pero se me acumulan las clases, asique lo tengo que ver.
+function updateClient(){
+
+    cuadrado.classList.add(customers[currentClient].color);
+
+    image.setAttribute("src", customers[currentClient].imagen);
+
+    comment.innerHTML=customers[currentClient].comentario;
+
+    linea.classList.add(customers[currentClient].linea);
+
+    nombre.innerHTML=customers[currentClient].nombre;
+    cargo.innerHTML=customers[currentClient].cargo;
+}
+
+function siguiente(){
+    currentClient++;
+
+    if(currentClient>customers.length-1){
+        currentClient=0;
+    }
+
+    updateClient();
+}
+
+function anterior(){
+    currentClient--;
+
+    if (currentClient<0){
+        currentClient=customers.length-1;
+    }
+
+    updateClient();
+}
+
+botonAnt.addEventListener('click', anterior);
+botonSig.addEventListener('click', siguiente);
+
+
+
 
 
 

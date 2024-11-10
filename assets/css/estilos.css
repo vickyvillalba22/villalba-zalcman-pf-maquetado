@@ -460,6 +460,10 @@ img{
     color: #9689ce;
 }
 
+.colorRosa{
+    color: #e7759c;
+}
+
 .fondoVioleta{
     background-color: #9689ce;
 }
@@ -482,6 +486,10 @@ img{
 
 .fondoGris{
     background-color: #888888;
+}
+
+.fondoRosa{
+    background-color: #e7759c;
 }
 
 .opacidadBaja{
