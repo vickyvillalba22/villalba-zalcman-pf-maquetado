@@ -1,20 +1,20 @@
 let carrusel=[
     {
-        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
         subtitulo: "deisgn & branding",
-        titulo:    "We are Floria Agency" ,
+        titulo:    "We are Floria Agency",
         descripcion: "How you write your advertising copy will be based on where you will place your ad. If it’s a billboard ad, you’ll need a super catchy headline.",
         textoBoton: "See Our Works"
     },
     {
-        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
         subtitulo: "featured work",
         titulo:    "AppStarter" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         textoBoton: "See Case Study"
     },
     {
-        imagenFondo: 'url("../imgs/bolsa-plantas.jpg")',
+        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
         subtitulo: "featured work",
         titulo: "Delicious Café" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",

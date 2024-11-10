@@ -122,6 +122,10 @@ body{
     min-height: 100vh;
 }
 
+.vh90{
+    min-height: 90vh;
+}
+
 .vh80{
     min-height: 80vh;
 }
@@ -588,10 +592,10 @@ main section{
     margin-bottom: 5em;
 }
 
-.slider{
+/*.slider{
     background-image:url("../imgs/bolsa-plantas.jpg");
     height: 90vh;
-}
+}*/
 
 /*PORTFOLIO*/ 
 
