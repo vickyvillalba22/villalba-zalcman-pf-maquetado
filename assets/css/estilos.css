@@ -147,7 +147,7 @@ body{
 }
 
 .h24{
-    height: 24em;
+    min-height: 24em;
 }
 
 .h8{
@@ -944,6 +944,9 @@ main section{
     .vh14m{
         height:14vh
     }
+    .vh80m{
+        height:100vh
+    }
     .spacebm{
         justify-content: space-between;
     }
@@ -953,6 +956,5 @@ main section{
     .marginTop3m{
         margin-top: 3em;
     }
-    
 
 }
