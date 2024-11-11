@@ -7,14 +7,14 @@ let carrusel=[
         textoBoton: "See Our Works"
     },
     {
-        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
+        imagenFondo: "/assets/imgs/relojes-blancos.jpg",
         subtitulo: "featured work",
         titulo:    "AppStarter" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         textoBoton: "See Case Study"
     },
     {
-        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
+        imagenFondo: "/assets/imgs/almohada-pajaro-flor.jpg",
         subtitulo: "featured work",
         titulo: "Delicious Café" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
@@ -30,7 +30,7 @@ let botonDer = document.getElementById("derecha");
 
    //div que agrupa todo
     let divBanner = document.createElement("div");
-    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m",);
+    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m");
     banner.appendChild(divBanner);
 
     //subtitulo
@@ -63,7 +63,7 @@ updateBack()
 function updateBack(){
     
     //img de fondo
-    banner.style.backgroundImage = carrusel[currentFoto].imagenFondo;
+    banner.style.backgroundImage = `url(${carrusel[currentFoto].imagenFondo})`;
 
     chico.innerHTML = carrusel[currentFoto].subtitulo;
 
@@ -304,7 +304,7 @@ function updateClient(){
     cargo.innerHTML=customers[currentClient].cargo;
 }
 
-function siguiente(){
+function avanza(){
     currentClient++;
 
     if(currentClient>customers.length-1){
@@ -314,7 +314,7 @@ function siguiente(){
     updateClient();
 }
 
-function anterior(){
+function retrocede(){
     currentClient--;
 
     if (currentClient<0){
@@ -324,8 +324,8 @@ function anterior(){
     updateClient();
 }
 
-botonAnt.addEventListener('click', anterior);
-botonSig.addEventListener('click', siguiente);
+botonAnt.addEventListener('click', retrocede);
+botonSig.addEventListener('click', avanza);
 
 
 /*SECTION FROM OUR BLOG - ME FALTAN COSAS!!*/
