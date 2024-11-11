@@ -247,9 +247,9 @@ let customers = [
 //creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales.
 let contenedor = document.createElement("div");
 contenedor.setAttribute("id", "contCustomers");
-contenedor.classList.add("df", "columna", "centerX", "centerY");
+contenedor.classList.add("df", "columna", "centerX", "centerY","w100m");
 
-let cuadrado = document.createElement("div");
+let cuadrado = document.createElement("div"); 
 cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel");
 contenedor.appendChild(cuadrado);
 
