@@ -340,10 +340,37 @@ let arrayBlog=[
         h2:"Enhance Your Brand Potential With Giant Advertising Blimps",
         parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         fecha:"Jan 25, 2019",
-        fotoSrc: "/assets/imgs/mujer-rosa1.jpg",
+        fotoSrc: "/assets/imgs/hombre-azul-1.jpg",
         nombre: "John Davidson",
+    },
 
-    }
+    {
+        link: "design.html",
+        imagenSrc: "/assets/imgs/pochoclos-jean.jpg",
+        imagenAlt: "persona comiendo pochoclos",
+        h3Texto: "Design",
+        h3Color: "colorGris",
+        h2:"Free Advertising For Your Online Business",
+        parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
+        fecha:"Jan 18, 2019",
+        fotoSrc: "/assets/imgs/mujer-rosa1.jpg",
+        nombre: "Christina Parker",
+    },
+
+    {
+        link: "design.html",
+        imagenSrc: "/assets/imgs/notebook-flores-rosas.jpg",
+        imagenAlt: "cuadro que dice today is awesome, con lampara rara",
+        h3Texto: "Productivity",
+        h3Color: "colorNaranja",
+        h2:"Change your mind, change your luck",
+        parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
+        fecha:"Jan 10, 2019",
+        fotoSrc: "/assets/imgs/mujer1.jpg",
+        nombre: "Pamela Riley",
+    } ,
+
+    
     
 ]
 
@@ -399,7 +426,7 @@ function generarBlog(){
 
         let fecha=document.createElement("p"); 
         fecha.innerText=(arrayBlog[i].fecha);  
-        p.classList.add("chicos");
+        fecha.classList.add("chicos");
         divFoto.appendChild(fecha);
 
         let foto=document.createElement("img"); //creo imagen
@@ -419,7 +446,8 @@ function generarBlog(){
         divInferior.appendChild(linea2);
 
         articulo.appendChild(divInferior);
-        contenedorBlog.appendChild(articulo);    
+        contenedorBlog.appendChild(articulo);
+        
     }
 
 }
