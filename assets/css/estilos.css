@@ -409,7 +409,27 @@ img{
 }
 
 .granDivisor{
-    border: 0.1px solid rgb(206, 205, 205);
+    border: 01px solid rgb(206, 205, 205);
+}
+
+.barraGris{
+    border: 2px solid rgb(206, 205, 205);
+}
+
+.bordeTopGris{
+    border-top: 1px solid rgb(206, 205, 205);
+}
+
+.bordeBottomGris{
+    border-bottom: 1px solid rgb(206, 205, 205);
+}
+
+.bordeLeftGris{
+    border-left: 1px solid rgb(206, 205, 205);
+}
+
+.bordeRightGris{
+    border-right: 1px solid rgb(206, 205, 205);
 }
 
 .items{
