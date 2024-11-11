@@ -581,6 +581,12 @@ input{
     background-size: cover;
 }
 
+/*bottom*/
+
+.bottom0{
+    bottom: 20%;
+}
+
  
 /*FIN CLASES ÚTILES*/
 
