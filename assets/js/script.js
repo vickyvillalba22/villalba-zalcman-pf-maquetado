@@ -418,7 +418,7 @@ function generarBlog(){
         divInferior.classList.add("hForms", "columna", "spaceb");
 
         let linea1=document.createElement("div");
-        linea1.classList.add("lineaTercio");
+        linea1.classList.add("bordeTopGris");
         divInferior.appendChild(linea1);
 
         let divFoto=document.createElement("div");
@@ -442,7 +442,7 @@ function generarBlog(){
         divInferior.appendChild(divFoto);
 
         let linea2=document.createElement("div");
-        linea2.classList.add("lineaTercio");
+        linea2.classList.add("bordeBottomGris");
         divInferior.appendChild(linea2);
 
         articulo.appendChild(divInferior);

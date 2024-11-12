@@ -408,10 +408,6 @@ img{
     letter-spacing: 0.25em;
 }
 
-.granDivisor{
-    border: 01px solid rgb(206, 205, 205);
-}
-
 .barraGris{
     border: 2px solid rgb(206, 205, 205);
 }
@@ -528,7 +524,7 @@ img{
 }
 
 .botonRedondo{
-    border-radius: 30%;
+    border-radius: 24px;
 }
 
 .paddingBotones{
@@ -694,12 +690,6 @@ main section{
     background-color: black;
     margin-right: 0.5em;
     margin-bottom: 0.2em 
-}
-
-/*LETS GET IN TOUCH*/
-
-.cajaBordeGris{
-    border: 1px solid grey;
 }
 
 /*SERVICES WE CAN PROVIDE*/
