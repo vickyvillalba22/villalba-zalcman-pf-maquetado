@@ -940,8 +940,17 @@ main section{
     .header{
         flex: none;
     }
+    .displayNonem{
+        display: none;
+    }
     .w90m{
         width: 90%;
+    }
+    .w80m{
+        width: 80%;
+    }
+    .w20m{
+        width: 20%;
     }
     .dfm{
         display: flex;
@@ -961,8 +970,8 @@ main section{
     .bordeNaranjam{
         border: 3px solid orange;
     }
-    .vh14m{
-        height:14vh
+    .vh18m{
+        height:18vh
     }
     .vh80m{
         height:100vh
@@ -975,6 +984,15 @@ main section{
     }
     .marginTop3m{
         margin-top: 3em;
+    }
+    .fontSize3m{
+        font-size: 3em;
+    }
+    .fontSize1-2m{
+        font-size: 1.2em;
+    }
+    .flexStartm{
+        justify-content: flex-start;
     }
 
 }

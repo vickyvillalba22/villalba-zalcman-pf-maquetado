@@ -40,7 +40,7 @@ let botonDer = document.getElementById("derecha");
 
     //titulo principal
     let titPrincipal = document.createElement("h1");
-    titPrincipal.classList.add("titPrincipal");
+    titPrincipal.classList.add("titPrincipal" , "fontSize3m");
     divBanner.appendChild(titPrincipal);
 
     //linea
@@ -250,18 +250,18 @@ contenedor.setAttribute("id", "contCustomers");
 contenedor.classList.add("df", "columna", "centerX", "centerY","w100m");
 
 let cuadrado = document.createElement("div"); 
-cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel");
+cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel", "w80m");
 contenedor.appendChild(cuadrado);
 
 let customerTotal = document.createElement("div");
-customerTotal.classList.add("posicionAb", "df", "columna", "centerX", "centerY", "h50", "w40", "spacea");
+customerTotal.classList.add("posicionAb", "df", "columna", "centerX", "centerY", "h50", "w40", "spacea","w100m");
 contenedor.appendChild(customerTotal);
 
 let image = document.createElement("img");
 image.classList.add("redonda");
 
 let comment = document.createElement("p");
-comment.classList.add("parrafoTitulo");
+comment.classList.add("parrafoTitulo", "fontSize1-2m", "w90m");
 
 let linea = document.createElement("div");
 linea.classList.add("linea");
