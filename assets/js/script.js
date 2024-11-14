@@ -25,12 +25,13 @@ let carrusel=[
 let currentFoto=0;
 
 let banner = document.getElementById("sliderA");
+banner.classList.add("vh90", "centerX", "centerY", "caract-Banner", "vh50q");
 let botonIzq = document.getElementById("izquierda");
 let botonDer = document.getElementById("derecha");
 
    //div que agrupa todo
     let divBanner = document.createElement("div");
-    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m");
+    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m", "w80q");
     banner.appendChild(divBanner);
 
     //subtitulo

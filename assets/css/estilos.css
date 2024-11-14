@@ -178,12 +178,6 @@ body{
     display: flex;
 }
 
-.secciones{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 .chicos{ /*textos chiquitos de colores*/
     font-family: "Open Sans";
     font-size: 0.6em;
@@ -871,6 +865,10 @@ main section{
         width: 100%;
     }
 
+    .w70q{
+        width: 70%;
+    }
+
     .w90q{
         width: 90%;
     }
@@ -887,12 +885,28 @@ main section{
         width: 30%;
     }
 
+    .w25q{
+        width: 25%;
+    }
+
     .vh90q{
         height: 80vh;
     }
 
+    .vh60q{
+        height: 60vh;
+    }
+
     .vh50q{
-        min-height: 50vh;
+        height: 50vh;
+    }
+
+    .h100q{
+        min-height: 100%;
+    }
+
+    .h50q{
+        height: 50%;
     }
 
     .spaceAq{
@@ -901,6 +915,14 @@ main section{
 
     .dfQ{
         display: flex;
+    }
+
+    .centerXq{
+        justify-content: center;
+    }
+
+    .centerYq{
+        align-items: center;
     }
 
     .columnaQ{
@@ -917,6 +939,10 @@ main section{
 
     .powerfulUI{
         border: 3px solid #9fbf73;
+    }
+
+    .reverseColumna{
+        flex-direction: column-reverse;
     }
 
     .logosQ{
