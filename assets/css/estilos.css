@@ -984,5 +984,8 @@ main section{
     .flexStartm{
         justify-content: flex-start;
     }
+    .lineHM{
+        line-height: 1.6;
+    }
 
 }
