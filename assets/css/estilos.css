@@ -898,7 +898,7 @@ main section{
     }
 
     .vh50q{
-        height: 50vh;
+        min-height: 50vh;
     }
 
     .h100q{
@@ -993,7 +993,7 @@ main section{
         height:18vh
     }
     .vh80m{
-        height:80vh
+        min-height:80vh
     }
     .vh100m{
         min-height:100%
@@ -1027,6 +1027,13 @@ main section{
     }
     .overflowm{
         overflow: auto
+    }
+    .textoLinea{
+        white-space: nowrap;
+    }
+    .fEndm{
+        justify-content: flex-end;
+        align-items: flex-end;
     }
     
 

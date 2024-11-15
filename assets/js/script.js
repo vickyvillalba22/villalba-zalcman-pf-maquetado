@@ -375,9 +375,10 @@ let arrayBlog=[
     
 ]
 
-let contenedorBlog=document.getElementById("contenedorOurBlog") //me traigo el contenedor
+let contenedorBlog=document.querySelectorAll(".contenedorOurBlog") //me traigo el contenedor
 
-function generarBlog(){
+function generarBlog(contenedor){
+    console.log("Generando contenido en el contenedor:", contenedor);
     
     for(let i=0; i<arrayBlog.length; i++){
         let articulo=document.createElement("article"); //creo el articulo
@@ -447,10 +448,12 @@ function generarBlog(){
         divInferior.appendChild(linea2);
 
         articulo.appendChild(divInferior);
-        contenedorBlog.appendChild(articulo);
+        contenedor.appendChild(articulo);
         
     }
 
 }
 
-generarBlog()
+contenedorBlog.forEach(contenedor => {
+    generarBlog(contenedor);
+});
