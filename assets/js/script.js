@@ -334,40 +334,40 @@ botonSig.addEventListener('click', avanza);
 let arrayBlog=[
     {
         link: "marketing.html",
-        imagenSrc: "/assets/imgs/libros-lampara-rara.jpg",
+        imagenSrc: "assets/imgs/libros-lampara-rara.jpg",
         imagenAlt: "cuadro que dice today is awesome, con lampara rara",
         h3Texto: "Marketing",
         h3Color: "branding",
         h2:"Enhance Your Brand Potential With Giant Advertising Blimps",
         parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         fecha:"Jan 25, 2019",
-        fotoSrc: "/assets/imgs/hombre-azul-1.jpg",
+        fotoSrc: "assets/imgs/hombre-azul-1.jpg",
         nombre: "John Davidson",
     },
 
     {
         link: "design.html",
-        imagenSrc: "/assets/imgs/pochoclos-jean.jpg",
+        imagenSrc: "assets/imgs/pochoclos-jean.jpg",
         imagenAlt: "persona comiendo pochoclos",
         h3Texto: "Design",
         h3Color: "colorGris",
         h2:"Free Advertising For Your Online Business",
         parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         fecha:"Jan 18, 2019",
-        fotoSrc: "/assets/imgs/mujer-rosa1.jpg",
+        fotoSrc: "assets/imgs/mujer-rosa1.jpg",
         nombre: "Christina Parker",
     },
 
     {
         link: "design.html",
-        imagenSrc: "/assets/imgs/notebook-flores-rosas.jpg",
+        imagenSrc: "assets/imgs/notebook-flores-rosas.jpg",
         imagenAlt: "cuadro que dice today is awesome, con lampara rara",
         h3Texto: "Productivity",
         h3Color: "colorNaranja",
         h2:"Change your mind, change your luck",
         parrafo: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         fecha:"Jan 10, 2019",
-        fotoSrc: "/assets/imgs/mujer1.jpg",
+        fotoSrc: "assets/imgs/mujer1.jpg",
         nombre: "Pamela Riley",
     } ,
 
@@ -375,10 +375,9 @@ let arrayBlog=[
     
 ]
 
-let contenedorBlog=document.querySelector("#contenedorOurBlog") //me traigo el contenedor
+let contenedorBlog=document.getElementById("contenedorOurBlog") //me traigo el contenedor
 
-function generarBlog(contenedor){
-    console.log("Generando contenido en el contenedor:", contenedor);
+function generarBlog(){
     
     for(let i=0; i<arrayBlog.length; i++){
         let articulo=document.createElement("article"); //creo el articulo
@@ -448,12 +447,10 @@ function generarBlog(contenedor){
         divInferior.appendChild(linea2);
 
         articulo.appendChild(divInferior);
-        contenedor.appendChild(articulo);
+        contenedorBlog.appendChild(articulo);
         
     }
 
 }
 
-contenedorBlog.forEach(contenedor => {
-    generarBlog(contenedor);
-});
+generarBlog();

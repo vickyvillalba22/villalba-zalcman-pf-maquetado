@@ -999,6 +999,9 @@ main section{
     .w30m{
         width: 30%;
     }
+    .w50m{
+        width: 50%;
+    }
     .dfm{
         display: flex;
     }
@@ -1024,7 +1027,7 @@ main section{
         min-height:80vh
     }
     .vh100m{
-        min-height:100%
+        min-height:100vh
     }
     .vh70m{
         height:70vh
@@ -1037,6 +1040,9 @@ main section{
     }
     .marginTop3m{
         margin-top: 3em;
+    }
+    .marginTop1m{
+        margin-top: 1em;
     }
     .fontSize3m{
         font-size: 3em;
@@ -1063,6 +1069,6 @@ main section{
         justify-content: flex-end;
         align-items: flex-end;
     }
-    
+   
 
 }
