@@ -138,6 +138,10 @@ body{
     min-height: 50vh;
 }
 
+.vh40{
+    min-height: 40vh;
+}
+
 .hForms{
     height: 3.5em;
 }
@@ -889,6 +893,10 @@ main section{
         width: 25%;
     }
 
+    .vh100q{
+        min-height: 100vh;
+    }
+
     .vh90q{
         height: 80vh;
     }
@@ -901,6 +909,10 @@ main section{
         min-height: 50vh;
     }
 
+    .vh30q{
+        min-height: 30vh;
+    }
+
     .h100q{
         min-height: 100%;
     }
@@ -911,6 +923,10 @@ main section{
 
     .spaceAq{
         justify-content: space-around;
+    }
+
+    .spacebQ{
+        justify-content: space-between;
     }
 
     .dfQ{
@@ -937,9 +953,13 @@ main section{
         height: 60vh;
     }
 
-    .powerfulUI{
-        border: 3px solid #9fbf73;
+    .marginTopQ{
+        margin-top: 3em;
     }
+
+    /*.powerfulUI{
+        border: 3px solid #9fbf73;
+    }*/
 
     .reverseColumna{
         flex-direction: column-reverse;
@@ -947,6 +967,10 @@ main section{
 
     .logosQ{
         height: 20em;
+    }
+
+    .displayNoneQ{
+        display: none;
     }
  
 
