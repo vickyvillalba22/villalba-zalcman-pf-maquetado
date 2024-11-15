@@ -142,6 +142,10 @@ body{
     min-height: 40vh;
 }
 
+.vh30{
+    min-height: 30vh;
+}
+
 .hForms{
     height: 3.5em;
 }
@@ -765,7 +769,7 @@ main section{
 
 /*ABOUT.HTML*/
 .bannerAbout{
-    background-image:url("/assets/imgs/sala-comun-about.jpg"); 
+    background-image:url("../imgs/sala-comun-about.jpg"); 
 }
 
 .achicarFlecha{
@@ -847,7 +851,7 @@ main section{
 }
 
 .bannerBlog{
-    background-image:url("/assets/imgs/bolsa-plantas.jpg"); 
+    background-image: url("/assets/imgs/bolsa-plantas.jpg"); 
 }
 
 .navFooter{
@@ -857,7 +861,7 @@ main section{
 /*PORTFOLIO*/
 
 .bannerPortfolio{
-    background-image: url("/assets/imgs/bolsa-plantas.jpg");
+    background-image: url("assets/imgs/bolsa-plantas.jpg");
 }
 
 
