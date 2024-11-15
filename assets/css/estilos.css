@@ -739,11 +739,11 @@ main section{
 }
 
 .submitFlechaNegra{
-    background-image: url("/assets/imgs/iconos/flecha.svg");
+    background-image: url("assets/imgs/iconos/flecha.svg");
 }
 
 .submitFlechaBlanca{
-    background-image: url("/assets/imgs/iconos/flecha-blanca.svg");
+    background-image: url("assets/imgs/iconos/flecha-blanca.svg");
 }
 
 .submitFlechaCaract{

@@ -1,20 +1,20 @@
 let carrusel=[
     {
-        imagenFondo: "./assets/imgs/bolsa-plantas.jpg",
+        imagenFondo: "assets/imgs/bolsa-plantas.jpg",
         subtitulo: "deisgn & branding",
         titulo:    "We are Floria Agency",
         descripcion: "How you write your advertising copy will be based on where you will place your ad. If it’s a billboard ad, you’ll need a super catchy headline.",
         textoBoton: "See Our Works"
     },
     {
-        imagenFondo: "/assets/imgs/relojes-blancos.jpg",
+        imagenFondo: "assets/imgs/relojes-blancos.jpg",
         subtitulo: "featured work",
         titulo:    "AppStarter" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
         textoBoton: "See Case Study"
     },
     {
-        imagenFondo: "/assets/imgs/almohada-pajaro-flor.jpg",
+        imagenFondo: "assets/imgs/almohada-pajaro-flor.jpg",
         subtitulo: "featured work",
         titulo: "Delicious Café" ,
         descripcion: "A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action.",
@@ -220,7 +220,7 @@ generarPortfolio()
 
 let customers = [
     {
-        imagen: "/assets/imgs/chica-pelirroja.jpg",
+        imagen: "assets/imgs/chica-pelirroja.jpg",
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "Sophia Allison",  
         cargo: "- CEO of Marco Inc.",
@@ -228,7 +228,7 @@ let customers = [
         linea: "colorNaranja"
     },
     {
-        imagen: "/assets/imgs/chico-lentes.jpg",
+        imagen: "assets/imgs/chico-lentes.jpg",
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "JOSEPH BLAKE",
         cargo: "- Designer at Elastic Themes",
@@ -236,7 +236,7 @@ let customers = [
         linea: "colorVioleta",
     },
     {
-        imagen: "/assets/imgs/chica-asiatica.jpg",
+        imagen: "assets/imgs/chica-asiatica.jpg",
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "EVELYN WALTERS" , 
         cargo: "- Founder of Uno Agency",
