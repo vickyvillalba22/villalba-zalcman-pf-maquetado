@@ -375,7 +375,7 @@ let arrayBlog=[
     
 ]
 
-let contenedorBlog=document.querySelectorAll(".contenedorOurBlog") //me traigo el contenedor
+let contenedorBlog=document.querySelector("#contenedorOurBlog") //me traigo el contenedor
 
 function generarBlog(contenedor){
     console.log("Generando contenido en el contenedor:", contenedor);

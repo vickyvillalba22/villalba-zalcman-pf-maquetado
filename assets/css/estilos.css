@@ -9,22 +9,22 @@
 
 @font-face{
     font-family: droidSerifBold;
-    src: url(/assets/fonts/droid-serif/DroidSerif-Bold.ttf)
+    src: url(assets/fonts/droid-serif/DroidSerif-Bold.ttf)
 }
  
 @font-face{
     font-family: droidSerifBoldItalic;
-    src: url(/assets/fonts/droid-serif/DroidSerif-BoldItalic.ttf)
+    src: url(assets/fonts/droid-serif/DroidSerif-BoldItalic.ttf)
 }
 
 @font-face{
     font-family: droidSerifItalic;
-    src: url(/assets/fonts/droid-serif/DroidSerif-Italic.ttf)
+    src: url(assets/fonts/droid-serif/DroidSerif-Italic.ttf)
 }
 
 @font-face{
     font-family: droidSerif;
-    src: url(/assets/fonts/droid-serif/DroidSerif.ttf)
+    src: url(assets/fonts/droid-serif/DroidSerif.ttf)
 }
 
 /*OPEN SANS*/
