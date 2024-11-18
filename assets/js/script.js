@@ -298,7 +298,7 @@ function updateClient(){
     image.setAttribute("src", customers[currentClient].imagen);
 
     comment.innerHTML=customers[currentClient].comentario;
-
+    
     linea.classList.add(customers[currentClient].linea);
 
     nombre.innerHTML=customers[currentClient].nombre;
