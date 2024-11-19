@@ -580,8 +580,12 @@ input{
 
 /*LINEAS*/
 
-.linea{
-    border-bottom: solid 0.16em;
+.lineaNaranja::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: orange;
+    height: 0.16em;
     width: 6em;
 }
 
@@ -917,12 +921,20 @@ main section{
         min-height: 30vh;
     }
 
+    .vh20q{
+        min-height: 20vh;
+    }
+
     .h100q{
         min-height: 100%;
     }
 
     .h50q{
         height: 50%;
+    }
+
+    .h6q{
+        height: 6em;
     }
 
     .spaceAq{

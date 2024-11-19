@@ -31,7 +31,7 @@ let botonDer = document.getElementById("derecha");
 
    //div que agrupa todo
     let divBanner = document.createElement("div");
-    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m", "w80q");
+    divBanner.classList.add("textCenter", "colorBlanco", "columna", "centerY", "h20", "spacea", "w50", "w100m", "w70q");
     banner.appendChild(divBanner);
 
     //subtitulo
@@ -248,24 +248,24 @@ let customers = [
 //creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales.
 let contenedor = document.createElement("div");
 contenedor.setAttribute("id", "contCustomers");
-contenedor.classList.add("df", "columna", "centerX", "centerY","w100m");
+contenedor.classList.add("df", "columna", "centerX", "centerY", "vh90","w100m", "vh50q");
 
 let cuadrado = document.createElement("div"); 
-cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel", "w80m");
+cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel", "w80m", "vh30q", "w50q");
 contenedor.appendChild(cuadrado);
 
 let customerTotal = document.createElement("div");
-customerTotal.classList.add("posicionAb", "df", "columna", "centerX", "centerY", "h50", "w40", "spacea","w100m");
+customerTotal.classList.add("posicionAb", "df", "columna", "centerX", "centerY", "h50", "w40", "spacea","w100m", "w70q", "vh50q");
 contenedor.appendChild(customerTotal);
 
 let image = document.createElement("img");
 image.classList.add("redonda");
 
-let comment = document.createElement("p");
-comment.classList.add("parrafoTitulo", "fontSize1-2m", "w90m");
-
 let linea = document.createElement("div");
-linea.classList.add("linea");
+linea.classList.add("lineaNaranja", "posicionRel", "w90q", "centerXq", "centerYq","dfQ");
+
+let comment = document.createElement("p");
+comment.classList.add("parrafoTitulo", "fontSize1-2m", "w90m", "w90q");
 
 let datosCliente = document.createElement("div");
 datosCliente.setAttribute("class", "df");
@@ -298,8 +298,6 @@ function updateClient(){
     image.setAttribute("src", customers[currentClient].imagen);
 
     comment.innerHTML=customers[currentClient].comentario;
-    
-    linea.classList.add(customers[currentClient].linea);
 
     nombre.innerHTML=customers[currentClient].nombre;
     cargo.innerHTML=customers[currentClient].cargo;
