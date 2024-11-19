@@ -1035,6 +1035,9 @@ main section{
     .vh18m{
         height:18vh
     }
+    .vh15m{
+        height:15vh
+    }
     .vh80m{
         min-height:80vh
     }
@@ -1042,7 +1045,13 @@ main section{
         min-height:100vh
     }
     .vh70m{
-        height:70vh
+        min-height:70vh
+    }
+    .vh60m{
+        min-height:60vh
+    }
+    .vh40m{
+        min-height:40vh
     }
     .spacebm{
         justify-content: space-between;
@@ -1059,12 +1068,12 @@ main section{
     .fontSize3m{
         font-size: 3em;
     }
-    .fontSize1-2m{
-        font-size: 1.2em;
+    .fontSize1-5m{
+        font-size: 1.5em;
     }
     .flexStartm{
         justify-content: flex-start;
-    }
+    } 
     .lineHM{
         line-height: 1.6;
     }
@@ -1080,6 +1089,9 @@ main section{
     .fEndm{
         justify-content: flex-end;
         align-items: flex-end;
+    }
+    .reverseColumnam{
+        flex-direction: column-reverse;
     }
    
 
