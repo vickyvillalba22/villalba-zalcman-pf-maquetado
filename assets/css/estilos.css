@@ -587,8 +587,16 @@ input{
     bottom: 0;
     background-color: orange;
     height: 0.16em;
-    width: 6em;
-    
+    width: 6em;  
+}
+
+.lineaBlanca::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    height: 0.16em;
+    width: 6em; 
 }
 
 
@@ -856,7 +864,7 @@ main section{
 /*SINGLE WORK*/
 
 .bannerSingle{
-    background-image: url(/assets/imgs/cuadro.jpg);
+    background-image: url("../imgs/cuadro.jpg");
 }
 
 .viewLive{
@@ -951,6 +959,10 @@ main section{
         min-height: 20vh;
     }
 
+    .vh10q{
+        min-height: 10vh;
+    }
+
     .h100q{
         min-height: 100%;
     }
@@ -981,6 +993,10 @@ main section{
 
     .centerYq{
         align-items: center;
+    }
+
+    .fEndq{
+        justify-content: flex-end;
     }
 
     .columnaQ{
