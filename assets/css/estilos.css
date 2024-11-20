@@ -807,6 +807,29 @@ main section{
     color: black;
 }
 
+.barraGris::after{
+    content: "";
+    position: absolute;
+    background-color: #9689ce;
+    height: 0.2em;
+}
+
+.porcentaje1::after{
+    width: 100%;
+}
+
+.porcentaje2::after{
+    width: 90%;
+}
+
+.porcentaje3::after{
+    width: 70%;
+}
+
+.porcentaje4::after{
+    width: 80%;
+}
+
 .corazon{
     width: 13%;
     opacity: 0.4;
@@ -843,13 +866,13 @@ main section{
 
 /*CONTACT*/
 .bannerContact{
-    background-image:url("/assets/imgs/chica-fotografa.jpg"); 
+    background-image:url("../imgs/chica-fotografa.jpg"); 
 }
 
 /*BLOG ITEM*/
 
 .bannerBlogItem{
-    background-image: url("/assets/imgs/madre-e-hija.jpg");
+    background-image: url("../imgs/madre-e-hija.jpg");
 }
 
 /*BLOG*/
@@ -858,7 +881,7 @@ main section{
 }
 
 .bannerBlog{
-    background-image: url("/assets/imgs/bolsa-plantas.jpg"); 
+    background-image: url("../imgs/bolsa-plantas.jpg"); 
 }
 
 .navFooter{
@@ -868,7 +891,7 @@ main section{
 /*PORTFOLIO*/
 
 .bannerPortfolio{
-    background-image: url("assets/imgs/bolsa-plantas.jpg");
+    background-image: url("../imgs/bolsa-plantas.jpg");
 }
 
 
@@ -975,10 +998,6 @@ main section{
     .marginTopQ{
         margin-top: 3em;
     }
-
-    /*.powerfulUI{
-        border: 3px solid #9fbf73;
-    }*/
 
     .reverseColumna{
         flex-direction: column-reverse;

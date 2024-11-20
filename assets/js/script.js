@@ -25,6 +25,7 @@ let carrusel=[
 let currentFoto=0;
 
 let banner = document.getElementById("sliderA");
+console.log(banner);
 banner.classList.add("vh90", "centerX", "centerY", "caract-Banner", "vh50q");
 let botonIzq = document.getElementById("izquierda");
 let botonDer = document.getElementById("derecha");
@@ -329,7 +330,7 @@ botonSig.addEventListener('click', avanza);
 
 /*SECTION FROM OUR BLOG - ME FALTAN COSAS!!*/
 
-let arrayBlog=[
+/*let arrayBlog=[
     {
         link: "marketing.html",
         imagenSrc: "assets/imgs/libros-lampara-rara.jpg",
@@ -373,9 +374,13 @@ let arrayBlog=[
     
 ]
 
-let contenedorBlog=document.getElementById("contenedorOurBlog") //me traigo el contenedor
+let contenedorBlog=document.getElementById("contenedorOurBlog");
+let contenedorBlog2 = document.getElementById("contenedorOurBlog2");
+console.log("hola"); //me traigo el contenedor
 
-function generarBlog(){
+function generarBlog(contenedor){
+
+    console.log("entra a generarBlog");
     
     for(let i=0; i<arrayBlog.length; i++){
         let articulo=document.createElement("article"); //creo el articulo
@@ -445,10 +450,11 @@ function generarBlog(){
         divInferior.appendChild(linea2);
 
         articulo.appendChild(divInferior);
-        contenedorBlog.appendChild(articulo);
+        contenedor.appendChild(articulo);
         
     }
 
 }
 
-generarBlog();
+generarBlog(contenedorBlog);
+generarBlog(contenedorBlog2);*/
