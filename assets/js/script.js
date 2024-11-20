@@ -248,10 +248,10 @@ let customers = [
 //creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales.
 let contenedor = document.createElement("div");
 contenedor.setAttribute("id", "contCustomers");
-contenedor.classList.add("df", "columna", "centerX", "centerY", "vh90","w100m", "vh50q");
+contenedor.classList.add("df", "columna", "centerX", "centerY", "vh90","w100m", "vh50q" , "marginTop3m");
 
 let cuadrado = document.createElement("div"); 
-cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel", "w80m", "vh30q", "w50q");
+cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionRel", "w80m", "vh30q", "w50q", "w90m", "vh80m");
 contenedor.appendChild(cuadrado);
 
 let customerTotal = document.createElement("div");
@@ -262,13 +262,13 @@ let image = document.createElement("img");
 image.classList.add("redonda");
 
 let linea = document.createElement("div");
-linea.classList.add("lineaNaranja", "posicionRel", "w90q", "centerXq", "centerYq","dfQ");
+linea.classList.add("lineaNaranja", "posicionRel", "w90q", "centerXq", "centerYq","dfQ", "centerX","centerY");
 
 let comment = document.createElement("p");
 comment.classList.add("parrafoTitulo", "fontSize1-2m", "w90m", "w90q");
 
 let datosCliente = document.createElement("div");
-datosCliente.setAttribute("class", "df");
+datosCliente.setAttribute("class", "df", "marginBottom1m");
 let nombre = document.createElement("h4");
 nombre.classList.add("parrafos");
 let cargo = document.createElement("h4");
@@ -417,7 +417,7 @@ function generarBlog(){
         divInferior.classList.add("hForms", "columna", "spaceb");
 
         let linea1=document.createElement("div");
-        linea1.classList.add("bordeTopGris");
+        linea1.classList.add("bordeTopGris", "marginTop1m");
         divInferior.appendChild(linea1);
 
         let divFoto=document.createElement("div");
