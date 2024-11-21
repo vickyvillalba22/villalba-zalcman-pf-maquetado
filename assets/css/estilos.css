@@ -7,6 +7,11 @@
     
 }
 
+::selection {
+    background-color: #000; /* Negro */
+    color: #fff; /* Blanco */
+}
+
 @font-face{
     font-family: droidSerifBold;
     src: url(../fonts/droid-serif/DroidSerif-Bold.ttf)
@@ -293,6 +298,7 @@ body{
 
 .fStart{
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .fEnd{
@@ -782,6 +788,10 @@ main section{
     margin-top: 0.8em;
 }
 
+.marginR{
+    margin-right: 1em;
+}
+
 /*ABOUT.HTML*/
 .bannerAbout{
     background-image:url("../imgs/sala-comun-about.jpg"); 
@@ -841,7 +851,6 @@ main section{
 .corazon{
     width: 13%;
     opacity: 0.4;
-    margin-left: 10%;
     margin-right: 4%;
 }
 
@@ -1136,6 +1145,9 @@ main section{
     }
     .reverseColumnam{
         flex-direction: column-reverse;
+    }
+    .textRm{
+        text-align: right;
     }
 
     

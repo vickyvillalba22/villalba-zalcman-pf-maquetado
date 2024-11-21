@@ -119,6 +119,7 @@ function generarBlog(contenedor){
 
         articulo.appendChild(divInferior);
         contenedor.appendChild(articulo);
+        contenedor.classList.add("marginTop1")
         
     }
 
