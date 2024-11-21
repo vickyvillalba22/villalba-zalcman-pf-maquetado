@@ -605,6 +605,15 @@ input{
     width: 6em; 
 }
 
+.lineaNegra::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    height: 0.16em;
+    width: 6em; 
+}
+
 
 /*BANNERS*/
 
@@ -745,11 +754,6 @@ main section{
 
 .hIconos2{
     height: 2.1em;
-}
-
-.lineaTercio{
-    border-bottom: 0.1em solid rgb(163, 163, 163);
-    width: 100%;
 }
 
 /*FOOTER*/
@@ -928,6 +932,10 @@ main section{
         width: 90%;
     }
 
+    .w80q{
+        width: 80%;
+    }
+
     .w50q{
         width: 50%;
     }
@@ -952,12 +960,20 @@ main section{
         height: 80vh;
     }
 
+    .vh70q{
+        min-height: 70vh;
+    }
+
     .vh60q{
         min-height: 60vh;
     }
 
     .vh50q{
         min-height: 50vh;
+    }
+
+    .vh40q{
+        min-height: 40vh;
     }
 
     .vh30q{
@@ -1006,6 +1022,11 @@ main section{
 
     .fEndq{
         justify-content: flex-end;
+    }
+
+    .fStartQ{
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .columnaQ{
