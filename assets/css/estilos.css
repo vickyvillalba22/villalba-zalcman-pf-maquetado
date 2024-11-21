@@ -534,6 +534,8 @@ img{
 
 .botonRedondo{
     border-radius: 24px;
+    margin-bottom: 4em;
+    margin-right: 4em;
 }
 
 .paddingBotones{
@@ -877,8 +879,9 @@ main section{
 }
 
 .viewLive{
-    top: 85%;
-    left: 90%;
+    top: 78%;
+    left: 88%;
+    width: 12em;
 }
 
 /*CONTACT*/
@@ -1076,6 +1079,9 @@ main section{
     .w100m{
         width: 100%;
     }
+    .w25m{
+        width: 25%;
+    }
     .bordeNaranjam{
         border: 3px solid orange;
     }
@@ -1108,6 +1114,9 @@ main section{
     }
     .textalignm{
         text-align: center;
+    }
+    .marginR2m{
+        margin-right: 2em;
     }
     .marginTop3m{
         margin-top: 3em;
@@ -1148,6 +1157,19 @@ main section{
     }
     .textRm{
         text-align: right;
+    }
+    .wrapm{
+        flex-wrap: wrap;
+    }
+    .posicionRelm{
+        position: relative;
+    }
+    .posicionAbm{
+        position: absolute;
+    }
+    .botonm{
+        top:22em;
+        left: 24em;
     }
 
     
