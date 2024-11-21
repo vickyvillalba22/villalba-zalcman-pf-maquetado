@@ -1036,6 +1036,10 @@ main section{
         flex-direction: column;
     }
 
+    .rowQ{
+        flex-direction: row;
+    }
+
     .tacoQ{
         flex-wrap: wrap;
     }
@@ -1058,6 +1062,19 @@ main section{
 
     .displayNoneQ{
         display: none;
+    }
+
+    .redonditaQ{
+        height: 3em;
+        width: auto;
+    }
+
+    .sinBordeQ{
+        border: none;
+    }
+
+    .bordeTopQ{
+        border-top: 1px solid rgb(206, 205, 205);
     }
  
 
