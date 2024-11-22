@@ -1142,8 +1142,14 @@ main section{
     .vh15m{
         height:15vh
     }
+    .vh25m{
+        height:25vh
+    }
     .vh80m{
         min-height:80vh
+    }
+    .vh50m{
+        min-height:50vh
     }
     .vh100m{
         min-height:100vh
