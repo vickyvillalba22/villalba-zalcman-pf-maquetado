@@ -1076,6 +1076,10 @@ main section{
     .bordeTopQ{
         border-top: 1px solid rgb(206, 205, 205);
     }
+
+    .agrandarLetra{
+        font-size: 1em;
+    }
  
 
 }
