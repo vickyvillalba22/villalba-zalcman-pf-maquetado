@@ -534,8 +534,7 @@ img{
 
 .botonRedondo{
     border-radius: 24px;
-    margin-bottom: 4em;
-    margin-right: 4em;
+
 }
 
 .paddingBotones{
@@ -953,6 +952,10 @@ main section{
         width: 25%;
     }
 
+    .w20q{
+        width: 20%;
+    }
+
     .vh100q{
         min-height: 100vh;
     }
@@ -985,8 +988,8 @@ main section{
         min-height: 20vh;
     }
 
-    .vh10q{
-        min-height: 10vh;
+    .vh15q{
+        min-height: 15vh;
     }
 
     .h100q{
