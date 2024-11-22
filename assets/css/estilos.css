@@ -192,7 +192,7 @@ body{
 }
 
 .chicos{ /*textos chiquitos de colores*/
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.6em;
     font-weight: 600;
     text-transform: uppercase;
@@ -202,65 +202,65 @@ body{
 }
 
 .titPrincipal{
-    font-family: droidSerif;
+    font-family: droidSerif, Arial, Helvetica;
     font-size: 4em;
     font-weight: 200;
 }
 
 .titNoTanPrincipal{
-    font-family: droidSerif;
+    font-family: droidSerif, Arial, Helvetica;
     font-size: 2.5em;
     font-weight: 200;
 }
 
 .titulos{
-    font-family: droidSerif;
+    font-family: droidSerif, Arial, Helvetica;
     font-size: 2em;
     font-weight: 100;
     margin-bottom: 0.4em;
 }
 
 .titIntermedio{
-    font-family: droidSerif;
+    font-family: droidSerif, Arial, Helvetica;
     font-size: 1.3em;
     font-weight: 100;
 }
 
 .subtitulos{
-    font-family: droidSerif;
+    font-family: droidSerif, Arial, Helvetica;
     font-size: 1em;
     font-weight: lighter;
 }
 
 .parrafoTitulo{
-    font-family: droidSerifItalic;
+    font-family: droidSerifItalic, Arial, Helvetica;
     font-size: 1.5em;
     line-height: 1.7em;
     text-align: center;
 }
 
 .parrafos{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.8em;
     line-height: 1.7em;
 }
 
 .parrafosMedianos{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.9em;
     line-height: 2.1em;
     font-weight: 500;
 }
 
 .parrafitos{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.65em;
     font-weight: 500;
 }
 
 .quote{
     border-left: 3px solid;
-    font-family: droidSerifItalic;
+    font-family: droidSerifItalic, Arial, Helvetica;
     font-size: 1.3em;
 }
 
@@ -528,7 +528,7 @@ img{
 /*BOTONES*/
 
 .fontBotones{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-weight: 600;
 }
 
@@ -576,7 +576,7 @@ img{
 }
 
 ::placeholder{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 1em;
 }
 
@@ -603,8 +603,8 @@ input{
     position: absolute;
     bottom: 0;
     background-color: white;
-    height: 0.16em;
-    width: 6em; 
+    height: 3px;
+    width: 96px; 
 }
 
 .lineaNegra::after{
@@ -651,6 +651,10 @@ header{
 
 nav ul li a:hover{
     color: #888888;     
+}
+
+.displayNone{
+    display: none;
 }
 
 /*MAIN*/ 
@@ -728,12 +732,6 @@ main section{
 
 /*SERVICES WE CAN PROVIDE*/
 
-
-
-.servicio{
-    height: 9em;
-}
-
 .redondel{
     border-radius: 50%;
     border: 1px solid rgb(189, 188, 188);
@@ -765,7 +763,7 @@ main section{
 }
 
 .textoFooter{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.7em;
 }
 
@@ -824,7 +822,7 @@ main section{
 }
 
 .textoHireUs{
-    font-family: "Open Sans";
+    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -1079,6 +1077,14 @@ main section{
 
     .agrandarLetra{
         font-size: 1em;
+    }
+
+    .achicarPrincipal{
+        font-size: 3em;
+    }
+
+    .displayBlockQ{
+        display: block;
     }
  
 

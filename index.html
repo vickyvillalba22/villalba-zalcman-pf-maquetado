@@ -12,13 +12,13 @@
 </head>
 <body>
 
-    <header class="df fondoBlanco w100m spaceb displayNonem">
+    <header class="df fondoBlanco w100m spaceb">
 
         <div class="w32 df centerX centerY fEnd">
             <div class="df centerX centerY w66 spacea w70q dfQ spaceAq"> 
-                <figure class="displayNoneQ"> 
-                    <a href="index.html"><img src="assets/imgs/logos/logo.svg" alt="logo"></a>  
-                </figure>
+ 
+                    <a class="displayNoneQ" href="index.html"><img src="assets/imgs/logos/logo.svg" alt="logo"></a>  
+
            
             <a class="subtitulos separarLetras colorNegro" href="index.html">FLORIA</a>
 
@@ -28,14 +28,20 @@
 
         </div>
 
-        <nav class="df centerX centerY w50">
-            <ul class="df centerX centerY spacea parrafos w66">
+        <nav class="df centerX centerY w50 fEndq">  
+
+            <ul id="listaNav" class="df centerX centerY spacea parrafos w66 displayNoneQ">
                 <li><a href="" class="colorNegro">Home</a></li>
                 <li><a href="" class="colorNegro">About</a></li>
                 <li><a href="" class="colorNegro">Portfolio</a></li>
                 <li><a href="" class="colorNegro">Contact</a></li>
                 <li><a href="" class="colorNegro">Blog</a></li> 
             </ul>
+
+            <a id="iconoMenu" href="" class="displayNone displayBlockQ w25q">
+                <i class="fa-solid fa-bars fa-2x colorNegro"></i>
+            </a>
+
         </nav>
 
     </header>
@@ -135,9 +141,9 @@
                 </div>
 
                 <p class="parrafos colorGris marginTop1m">Businesses often become known today through effective marketing. The marketing may be in the form of a regular news item or half column society news in the Sunday newspaper.</p>
-                <figure>
+               
                     <img class="w40 w25q" src="assets/imgs/barvaraFoster (1).png" alt="firma de Barvara Foster" width="" height="">
-                </figure>
+               
             </div>
             <div class="w50 vh90q w100q w100m">
                 <img class="h100 objFit vh60m" src="assets/imgs/cabina.jpg" alt="mujer hablando por teléfono y leyendo un libro" width="" height="">
@@ -172,9 +178,9 @@
         <!--section "powerful"-->
         <section class="w78 df spaceb centerX centerY h24 powerfulUI vh60q dfQ columnaQ spaceAq">
             <div class="h100 w50 centerX w100q">
-                <figure class="w100">
+           
                     <img class="objFit" src="assets/imgs/tres-personas.jpeg" alt="hombre caminando en un living" width="" height="">
-                </figure>
+            
             </div>
 
             <div class="df centerX centerY w50 w100q columna spacea">
@@ -252,6 +258,7 @@
         </section>
 
         <!--SERVICES WE CAN PROVIDE-->
+        <!--acá dejé los figure pq sino la clase del borde y radious redondea y recorta la imagen-->
 
         <section class="w78 vh80 columna spacea w90q services w90m flexdcolm vh100m">
 
@@ -262,7 +269,7 @@
 
         <div class="df taco spacea centerX vh60 tacoQ">
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
                 <div class="">
                 <figure class="redondo">
                     <img class="vectores w100" src="assets/imgs/iconos/hojas.svg" alt="hojas">
@@ -277,7 +284,7 @@
 
             </article>
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
                 <div class="">
                 <figure class="redondo">
                     <img class="vectores w100" src="assets/imgs/iconos/compu.svg" alt="computadora">
@@ -291,7 +298,7 @@
             </div>
             </article>
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
                 <div class="">
                 <figure class="redondo">
                     <img class="vectores w100" src="assets/imgs/iconos/raqueta-pelota.svg" alt="raqueta y pelota de tenis">
@@ -305,7 +312,7 @@
             </div>
             </article>
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
                 <div class="">
                 <figure class="redondo">
                     <img class="vectores w100" src="assets/imgs/iconos/cajonera.svg" alt="cajonera">
@@ -319,7 +326,7 @@
                 </div>
             </article>
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
                 <div class="">
                 <figure  class="redondo" >
                     <img class="vectores w100" src="assets/imgs/iconos/circulitos.svg" alt="círculos con patrones">
@@ -334,7 +341,7 @@
 
             </article>
 
-            <article class="servicio w32 df w50q w100m marginTop3m">
+            <article class="h8 w32 df w50q w100m marginTop3m">
 
                 <div class="">
                 <figure class="redondo">
@@ -368,9 +375,9 @@
 
             <article class="df columna w23 spacea w45q posicionRel w100m">
 
-                <figure class="h80 ">
-                    <img class="w100 h100 objFit" src="assets/imgs/hombre1.jpg" alt="Roger Chavez, hombre con fondo gris">
-                </figure>
+            
+                    <img class="w100 h80 objFit" src="assets/imgs/hombre1.jpg" alt="Roger Chavez, hombre con fondo gris">
+
 
                 <div class="posicionAb df spaceb hIconos w40 cajaIconos fondoBlanco bottom17">
 
@@ -401,9 +408,9 @@
             </article>
 
             <article class="df columna w23 spacea posicionRel w45q w100m">
-                <figure class="h80">
-                    <img class="w100 h100 objFit" src="assets/imgs/mujer1.jpg" alt="Roger Chavez, hombre con fondo gris">
-                </figure>
+              
+                    <img class="w100 h80 objFit" src="assets/imgs/mujer1.jpg" alt="Roger Chavez, hombre con fondo gris">
+          
 
                 <div class="posicionAb df spaceb hIconos w40 cajaIconos fondoBlanco bottom17">
 
@@ -435,9 +442,9 @@
             </article>
 
             <article class="df columna w23 spacea posicionRel w45q w100m">
-                <figure class="h80">
-                    <img class="w100 h100 objFit" src="assets/imgs/hombre-azul-1.jpg" alt="Roger Chavez, hombre con fondo gris">
-                </figure>
+       
+                    <img class="w100 h80 objFit" src="assets/imgs/hombre-azul-1.jpg" alt="Roger Chavez, hombre con fondo gris">
+
 
                 <div class="posicionAb df spaceb hIconos w40 cajaIconos fondoBlanco bottom17">
 
@@ -468,9 +475,9 @@
             </article>
 
             <article class="df columna w23 spacea posicionRel w45q w100m">
-                <figure class="h80">
-                    <img class="w100 h100 objFit" src="assets/imgs/mujer-rosa1.jpg" alt="Roger Chavez, hombre con fondo gris">
-                </figure>
+
+                    <img class="w100 h80 objFit" src="assets/imgs/mujer-rosa1.jpg" alt="Roger Chavez, hombre con fondo gris">
+
 
                 <div class="posicionAb df spaceb hIconos w40 cajaIconos fondoBlanco bottom17">
 

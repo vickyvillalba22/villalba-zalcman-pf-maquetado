@@ -42,13 +42,8 @@ let botonDer = document.getElementById("derecha");
 
     //titulo principal
     let titPrincipal = document.createElement("h1");
-    titPrincipal.classList.add("titPrincipal" , "fontSize3m");
+    titPrincipal.classList.add("titPrincipal" , "fontSize3m", "lineaBlanca", "posicionRel", "df", "centerX", "hIconos", "centerY", "achicarPrincipal");
     divBanner.appendChild(titPrincipal);
-
-    //linea
-    let linea1 = document.createElement("div");
-    linea1.classList.add("linea");
-    divBanner.appendChild(linea1);
 
     //descripcion
     let descripcion = document.createElement("p");
