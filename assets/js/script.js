@@ -121,7 +121,6 @@ const customers = [
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "Sophia Allison",  
         cargo: "- CEO of Marco Inc.",
-        color: "fondoNaranja",
         linea: "colorNaranja"
     },
     {
@@ -129,18 +128,19 @@ const customers = [
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "JOSEPH BLAKE",
         cargo: "- Designer at Elastic Themes",
-        color: "fondoVioleta",
-        linea: "colorVioleta",
+        linea: "colorVioleta"
     },
     {
         imagen: "assets/imgs/chica-asiatica.jpg",
         comentario: '“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”',
         nombre: "EVELYN WALTERS" , 
         cargo: "- Founder of Uno Agency",
-        color: "fondoRosa",
         linea: "colorRosa"
     }
 ];
+
+const colores = ["fondoNaranja", "fondoVioleta", "fondoRosa"];
+//const colores_lineas = ["colorNaranja", "colorVioleta", "colorRosa"];
 
 //defino las variables que se reutilizarán y actualizarán
 let currentClient = 0;
@@ -195,45 +195,47 @@ export function generar_customers(caja){
 
 export function logica_customers(){
     //llamo a la función de actualizar contenido para que ya cargue lo que se ve primero.
-updateClient();
+    updateClient();
 
-//en esta funcion reemplazo el contenido según en qué posicion del recorrido del array esté currentClient. Y pongo clases específicas, pero se me acumulan las clases, asique lo tengo que ver.
-function updateClient(){
+    //en esta funcion reemplazo el contenido según en qué posicion del recorrido del array esté currentClient.
+    function updateClient(){
 
-    cuadrado.classList.add(customers[currentClient].color);
+        //recorre el array y ejecuta una funcion para cada uno. En este caso, toma a cada elemento del array (que son clases), y le remueve la clase que se llame igual que el elemento de cada itinerancia del array.
+        colores.forEach(color => cuadrado.classList.remove(color));
 
-    image.setAttribute("src", customers[currentClient].imagen);
+        cuadrado.classList.add(colores[currentClient]);
 
-    comment.innerHTML=customers[currentClient].comentario;
+        image.setAttribute("src", customers[currentClient].imagen);
 
-    nombre.innerHTML=customers[currentClient].nombre;
-    cargo.innerHTML=customers[currentClient].cargo;
-}
+        comment.innerHTML=customers[currentClient].comentario;
 
-function avanza(){
-    currentClient++;
-
-    if(currentClient>customers.length-1){
-        currentClient=0;
+        nombre.innerHTML=customers[currentClient].nombre;
+        cargo.innerHTML=customers[currentClient].cargo;
     }
 
-    updateClient();
-}
+    function avanza(){
+        currentClient++;
 
-function retrocede(){
-    currentClient--;
+        if(currentClient>customers.length-1){
+            currentClient=0;
+        }
 
-    if (currentClient<0){
-        currentClient=customers.length-1;
+        updateClient();
     }
 
-    updateClient();
-}
+    function retrocede(){
+        currentClient--;
 
-botonAnt.addEventListener('click', retrocede);
-botonSig.addEventListener('click', avanza);
-}
+        if (currentClient<0){
+            currentClient=customers.length-1;
+        }
 
+        updateClient();
+    }
+
+    botonAnt.addEventListener('click', retrocede);
+    botonSig.addEventListener('click', avanza);
+}
 
 
 /*SECTION FROM OUR BLOG*/
