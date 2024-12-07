@@ -156,7 +156,7 @@ let botonSig;
 
 export function generar_customers(caja){
 
-    console.log("hola")
+    //console.log("hola")
     
     cuadrado = document.createElement("div"); 
     cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionAb", "w80m", "vh30q", "w50q", "w90m", "vh80m");

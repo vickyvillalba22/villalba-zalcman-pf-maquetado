@@ -120,6 +120,31 @@ function pause(){
 
 rapido();
 
+/*SECTION LOGOS*/
+
+const arrayLogos = ["/assets/imgs/logos/logoAven.png", "/assets/imgs/logos/logoEarth.png", "/assets/imgs/logos/logoIdeaa.png", "/assets/imgs/logos/logoZootv.png", "/assets/imgs/logos/logoCodeLab.png", "/assets/imgs/logos/logoCircle.png"];
+
+let contLogos = document.getElementById("contenedorLogos");
+
+function armarLogos(){
+
+    for (let i=0; i<arrayLogos.length; i++){
+
+        let linkLogo = document.createElement("a");
+        linkLogo.classList.add("w30q", "w30m");
+
+        let imagenLogo = document.createElement("img");
+        imagenLogo.setAttribute("src", arrayLogos[i]);
+        imagenLogo.classList.add("logos", "w100m");
+    
+        linkLogo.appendChild(imagenLogo);
+
+        contLogos.appendChild(linkLogo);
+    
+    }
+}
+
+armarLogos()
 
 /*CUSTOMERS ABOUT US*/
 
