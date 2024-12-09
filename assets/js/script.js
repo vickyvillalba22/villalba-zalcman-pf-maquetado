@@ -159,7 +159,7 @@ export function generar_customers(caja){
     //console.log("hola")
     
     cuadrado = document.createElement("div"); 
-    cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionAb", "w80m", "vh30q", "w50q", "w90m", "vh80m");
+    cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionAb", "w80m", "vh50q", "w50q", "w90m", "vh80m");
     caja.appendChild(cuadrado);
     
     let customerTotal = document.createElement("div");
@@ -291,7 +291,7 @@ export function generarBlog(contenedor){
     
     for(let i=0; i<arrayBlog.length; i++){
         let articulo=document.createElement("article"); //creo el articulo
-        articulo.classList.add("w32", "df", "columna", "spacea", "w45q", "w100m", "marginTop3m") //le agrego las clases generales
+        articulo.classList.add("w32", "df", "columna", "spacea", "w45q", "w100m", "marginTopQ", "marginTop3m") //le agrego las clases generales
 
         let enlace = document.createElement("a");
         enlace.classList.add("posicionRel")
