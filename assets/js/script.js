@@ -1,6 +1,5 @@
 /*SECTION SOME OF OUR WORKS*/
 
-let trabajos=document.getElementById("ourWorks") //me traigo el contenedor
 
 //creo el array de objetos con toda la info
 let artPortfolio=[
@@ -59,8 +58,9 @@ let artPortfolio=[
     }
 ]
 
-function generarPortfolio(){
-    for(let i=0; i<artPortfolio.length; i++){
+export function generarPortfolio(contenedorPortfolio, cantidad){
+   
+    for(let i=0; i<cantidad; i++){
         let articulo=document.createElement("article"); //creo el articulo
         articulo.classList.add("w32", "tercio", "w100m") //le agrego las clases generales
 
@@ -87,7 +87,7 @@ function generarPortfolio(){
         h3.classList.add("subtitulos");
         articulo.appendChild(h3);
     
-        trabajos.appendChild(articulo) //muestro en articulo completo
+        contenedorPortfolio.appendChild(articulo) //muestro en articulo completo
 
         let mas = document.createElement("a");
         let iconoMas= document.createElement("i");
@@ -110,7 +110,7 @@ function generarPortfolio(){
 
 }
 
-generarPortfolio()
+
 
 
 /*CUSTOMERS ABOUT US*/
@@ -284,8 +284,7 @@ const arrayBlog=[
     
 ]
 
-/*let contenedorBlog2 = document.getElementById("contenedorOurBlog2");
-console.log(contenedorBlog2); //me traigo el contenedor*/
+
 
 export function generarBlog(contenedor){
     

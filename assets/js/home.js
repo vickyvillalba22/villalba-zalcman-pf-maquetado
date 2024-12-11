@@ -1,4 +1,4 @@
-import { generarBlog, generar_customers, logica_customers } from "./script.js";
+import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "./script.js";
 
 const carrusel=[
     {
@@ -146,6 +146,12 @@ function armarLogos(){
 
 armarLogos()
 
+/*SECTION SOME OF OUR WORKS*/
+let trabajos = document.getElementById("ourWorks");
+generarPortfolio(trabajos, 6);
+
+
+
 /*CUSTOMERS ABOUT US*/
 
 let customersAboutUs = document.getElementById("custAboutUs");
@@ -153,8 +159,8 @@ let customersAboutUs = document.getElementById("custAboutUs");
 generar_customers(customersAboutUs);
 logica_customers();
 
+
 /*FROM OUR BLOG*/
 
 let contenedorBlog = document.getElementById("contenedorOurBlog");
-
 generarBlog(contenedorBlog);
