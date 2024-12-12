@@ -191,8 +191,15 @@ body{
     display: flex;
 }
 
-.chicos{ /*textos chiquitos de colores*/
+.openSans{
     font-family: "Open Sans", Arial, Helvetica;
+}
+
+.droidSerif{
+    font-family: droidSerif, Arial, Helvetica;
+}
+
+.chicos{ /*textos chiquitos de colores*/
     font-size: 0.6em;
     font-weight: 600;
     text-transform: uppercase;

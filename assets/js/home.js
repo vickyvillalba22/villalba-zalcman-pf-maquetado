@@ -1,4 +1,4 @@
-import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "../js/script.js";
+import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "./script.js";
 
 const carrusel=[
     {
@@ -41,7 +41,7 @@ const carrusel=[
 
     //subtitulo
     let chico = document.createElement("h3");
-    chico.classList.add("chicos");
+    chico.classList.add("chicos", "openSans");
     divBanner.appendChild(chico);
 
     //titulo principal

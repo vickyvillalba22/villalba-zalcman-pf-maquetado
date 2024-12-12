@@ -78,7 +78,7 @@ export function generarPortfolio(contenedorPortfolio, cantidad){
     
         let h4=document.createElement("h4"); //creo el h4
         h4.innerText=(artPortfolio[i].h4); //le agrego el texto particular
-        h4.classList.add("chicos"); //le agrego la clase general
+        h4.classList.add("chicos", "openSans"); //le agrego la clase general
         h4.classList.add(artPortfolio[i].h4Clase); //le agrego la clase particular
         articulo.appendChild(h4); //lo muestro en articulo
     
@@ -306,7 +306,7 @@ export function generarBlog(contenedor){
 
         let h3Subtitulo=document.createElement("h3"); 
         h3Subtitulo.innerText=(arrayBlog[i].h3Texto); 
-        h3Subtitulo.classList.add("chicos", arrayBlog[i].h3Color); 
+        h3Subtitulo.classList.add("chicos", "openSans", arrayBlog[i].h3Color); 
         div.appendChild(h3Subtitulo); //agrego el h3subtitulo al div contenedor
 
         let h2=document.createElement("h2"); 
@@ -334,7 +334,7 @@ export function generarBlog(contenedor){
 
         let fecha=document.createElement("p"); 
         fecha.innerText=(arrayBlog[i].fecha);  
-        fecha.classList.add("chicos");
+        fecha.classList.add("chicos", "openSans");
         divFoto.appendChild(fecha);
 
         let foto=document.createElement("img"); //creo imagen
@@ -344,7 +344,7 @@ export function generarBlog(contenedor){
 
         let nombre=document.createElement("p"); 
         nombre.innerText=(arrayBlog[i].nombre);  
-        nombre.classList.add("chicos");
+        nombre.classList.add("chicos", "openSans");
         divFoto.appendChild(nombre); 
 
         divInferior.appendChild(divFoto);
