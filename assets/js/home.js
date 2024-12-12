@@ -46,12 +46,12 @@ const carrusel=[
 
     //titulo principal
     let titPrincipal = document.createElement("h1");
-    titPrincipal.classList.add("titPrincipal" , "fontSize3m", "lineaBlanca", "posicionRel", "df", "centerX", "hIconos", "centerY", "achicarPrincipal");
+    titPrincipal.classList.add("titPrincipal" , "fontSize3m", "lineaBlanca", "posicionRel", "df", "centerX", "hIconos", "centerY", "achicarPrincipal", "droidSerif");
     divBanner.appendChild(titPrincipal);
 
     //descripcion
     let descripcion = document.createElement("p");
-    descripcion.classList.add("parrafos");
+    descripcion.classList.add("parrafos", "openSans");
     divBanner.appendChild(descripcion);
 
     //boton !! capaz hay que ponerle hacia donde va

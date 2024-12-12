@@ -84,7 +84,7 @@ export function generarPortfolio(contenedorPortfolio, cantidad){
     
         let h3=document.createElement("h3");
         h3.innerText=(artPortfolio[i].h3);
-        h3.classList.add("subtitulos");
+        h3.classList.add("subtitulos", "droidSerif");
         articulo.appendChild(h3);
     
         contenedorPortfolio.appendChild(articulo) //muestro en articulo completo
@@ -175,9 +175,9 @@ export function generar_customers(caja){
     let datosCliente = document.createElement("div");
     datosCliente.setAttribute("class", "df", "marginBottom1m");
     nombre = document.createElement("h4");
-    nombre.classList.add("parrafos");
+    nombre.classList.add("parrafos", "openSans");
     cargo = document.createElement("h4");
-    cargo.classList.add("parrafos", "colorGris");
+    cargo.classList.add("parrafos", "colorGris", "openSans");
     datosCliente.append(nombre, cargo);
     
     customerTotal.append(image, comment, linea, datosCliente);
@@ -311,12 +311,12 @@ export function generarBlog(contenedor){
 
         let h2=document.createElement("h2"); 
         h2.innerText=(arrayBlog[i].h2);
-        h2.classList.add("titIntermedio")
+        h2.classList.add("titIntermedio", "droidSerif")
         div.appendChild(h2); //agrego el h2 al div contenedor
 
         let p=document.createElement("p"); 
         p.innerText=(arrayBlog[i].parrafo);  
-        p.classList.add("parrafos", "colorGris", "marginTop1");
+        p.classList.add("parrafos", "colorGris", "marginTop1", "openSans");
         p.style.textTransform = "none"
         div.appendChild(p); //agrego el p al div contenedor
 

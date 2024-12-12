@@ -209,32 +209,27 @@ body{
 }
 
 .titPrincipal{
-    font-family: droidSerif, Arial, Helvetica;
     font-size: 4em;
     font-weight: 200;
 }
 
 .titNoTanPrincipal{
-    font-family: droidSerif, Arial, Helvetica;
     font-size: 2.5em;
     font-weight: 200;
 }
 
 .titulos{
-    font-family: droidSerif, Arial, Helvetica;
     font-size: 2em;
     font-weight: 100;
     margin-bottom: 0.4em;
 }
 
 .titIntermedio{
-    font-family: droidSerif, Arial, Helvetica;
     font-size: 1.3em;
     font-weight: 100;
 }
 
 .subtitulos{
-    font-family: droidSerif, Arial, Helvetica;
     font-size: 1em;
     font-weight: lighter;
 }
@@ -247,20 +242,17 @@ body{
 }
 
 .parrafos{
-    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.8em;
     line-height: 1.7em;
 }
 
 .parrafosMedianos{
-    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.9em;
     line-height: 2.1em;
     font-weight: 500;
 }
 
 .parrafitos{
-    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.65em;
     font-weight: 500;
 }
