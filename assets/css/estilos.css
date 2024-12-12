@@ -56,7 +56,8 @@ body{
 }
 
 nav ul li.active{
-    background-color: #c4ec8d;
+    background-color: #e0ffb4;
+    border-radius: 15px;
 }
 
 .w100{

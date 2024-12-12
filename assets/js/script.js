@@ -1,6 +1,5 @@
 /*SECTION SOME OF OUR WORKS*/
 
-
 //creo el array de objetos con toda la info
 let artPortfolio=[
     {
@@ -281,8 +280,6 @@ const arrayBlog=[
     
     
 ]
-
-
 
 export function generarBlog(contenedor){
     

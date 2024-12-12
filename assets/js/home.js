@@ -1,9 +1,11 @@
-import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "./script.js";
+//TODO COMENTADO PORQUE TENGO QUE RESOLVER EL TEMITA DE LOS MODULOS DE JAVASCRIPT Y NAVEGADORES:)
+
+/*import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "./script.js";
 
 const carrusel=[
     {
         imagenFondo: "assets/imgs/bolsa-plantas.jpg",
-        subtitulo: "deisgn & branding",
+        subtitulo: "design & branding",
         titulo:    "We are Floria Agency",
         descripcion: "How you write your advertising copy will be based on where you will place your ad. If it’s a billboard ad, you’ll need a super catchy headline.",
         textoBoton: "See Our Works"
@@ -120,7 +122,7 @@ function pause(){
 
 rapido();
 
-/*SECTION LOGOS*/
+/*SECTION LOGOS
 
 const arrayLogos = ["/assets/imgs/logos/logoAven.png", "/assets/imgs/logos/logoEarth.png", "/assets/imgs/logos/logoIdeaa.png", "/assets/imgs/logos/logoZootv.png", "/assets/imgs/logos/logoCodeLab.png", "/assets/imgs/logos/logoCircle.png"];
 
@@ -146,11 +148,11 @@ function armarLogos(){
 
 armarLogos()
 
-/*SECTION SOME OF OUR WORKS*/
+/*SECTION SOME OF OUR WORKS
 let trabajos = document.getElementById("ourWorks");
 generarPortfolio(trabajos, 6);
 
-/*CUSTOMERS ABOUT US*/
+/*CUSTOMERS ABOUT US
 
 let customersAboutUs = document.getElementById("custAboutUs");
 
@@ -158,7 +160,7 @@ generar_customers(customersAboutUs);
 logica_customers();
 
 
-/*FROM OUR BLOG*/
+/*FROM OUR BLOG
 
 let contenedorBlog = document.getElementById("contenedorOurBlog");
-generarBlog(contenedorBlog);
+generarBlog(contenedorBlog); */
