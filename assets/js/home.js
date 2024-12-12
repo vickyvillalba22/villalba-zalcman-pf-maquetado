@@ -1,4 +1,4 @@
-import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "./script.js";
+import { generarBlog, generar_customers, logica_customers, generarPortfolio } from "../js/script.js";
 
 const carrusel=[
     {
