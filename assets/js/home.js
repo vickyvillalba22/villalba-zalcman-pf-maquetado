@@ -150,8 +150,6 @@ armarLogos()
 let trabajos = document.getElementById("ourWorks");
 generarPortfolio(trabajos, 6);
 
-
-
 /*CUSTOMERS ABOUT US*/
 
 let customersAboutUs = document.getElementById("custAboutUs");

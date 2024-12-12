@@ -111,8 +111,6 @@ export function generarPortfolio(contenedorPortfolio, cantidad){
 }
 
 
-
-
 /*CUSTOMERS ABOUT US*/
 
 const customers = [
