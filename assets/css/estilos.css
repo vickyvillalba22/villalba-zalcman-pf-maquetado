@@ -55,6 +55,10 @@ body{
     flex-direction: column;
 }
 
+nav ul li.active{
+    background-color: #c4ec8d;
+}
+
 .w100{
     width:100%;
 }
@@ -583,8 +587,6 @@ input{
     padding: 1.2em;
 }
 
-
-
 /*LINEAS*/
 
 .lineaNaranja::after{
@@ -661,11 +663,6 @@ main section{
     margin: 0 auto;
     margin-bottom: 5em;
 }
-
-/*.slider{
-    background-image:url("../imgs/bolsa-plantas.jpg");
-    height: 90vh;
-}*/
 
 /*PORTFOLIO*/ 
 
@@ -756,28 +753,8 @@ main section{
 
 /*FOOTER*/
 
-.lineaGris{
-    border-bottom: 0.001px solid rgb(210, 209, 209);
-}
-
 .textoFooter{
-    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.7em;
-}
-
-.submitFlechaNegra{
-    background-image: url("assets/imgs/iconos/flecha.svg");
-}
-
-.submitFlechaBlanca{
-    background-image: url("assets/imgs/iconos/flecha-blanca.svg");
-}
-
-.submitFlechaCaract{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1.8em;
-    width: 4em;
 }
 
 .navs{
@@ -820,7 +797,6 @@ main section{
 }
 
 .textoHireUs{
-    font-family: "Open Sans", Arial, Helvetica;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -896,9 +872,6 @@ main section{
 }
 
 /*BLOG*/
-.displayTable{
-    display: table-cell;
-}
 
 .bannerBlog{
     background-image: url("../imgs/bolsa-plantas.jpg"); 
@@ -1072,7 +1045,6 @@ main section{
     .sinBordeQ{
         border: none;
     }
-
     .bordeTopQ{
         border-top: 1px solid rgb(206, 205, 205);
     }
@@ -1080,7 +1052,6 @@ main section{
     .agrandarLetra{
         font-size: 1em;
     }
-
     .achicarPrincipal{
         font-size: 3em;
     }
@@ -1088,7 +1059,6 @@ main section{
     .displayBlockQ{
         display: block;
     }
- 
 
 }
 
@@ -1110,6 +1080,9 @@ main section{
     }
     .w30m{
         width: 30%;
+    }
+    .w40m{
+        width:40%;
     }
     .w50m{
         width: 50%;
@@ -1164,6 +1137,9 @@ main section{
     }
     .vh40m{
         min-height:40vh
+    }
+    .vh30m{
+        min-height: 30vh;
     }
     .spacebm{
         justify-content: space-between;
@@ -1229,7 +1205,5 @@ main section{
     .botonm{
         top:22em;
         left: 24em;
-    }
-
-    
+    }   
 }

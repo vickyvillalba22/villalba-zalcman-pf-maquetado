@@ -131,7 +131,7 @@ function armarLogos(){
     for (let i=0; i<arrayLogos.length; i++){
 
         let linkLogo = document.createElement("a");
-        linkLogo.classList.add("w30q", "w30m");
+        linkLogo.classList.add("w30q", "w40m");
 
         let imagenLogo = document.createElement("img");
         imagenLogo.setAttribute("src", arrayLogos[i]);

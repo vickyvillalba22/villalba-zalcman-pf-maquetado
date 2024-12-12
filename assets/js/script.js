@@ -157,7 +157,7 @@ export function generar_customers(caja){
     //console.log("hola")
     
     cuadrado = document.createElement("div"); 
-    cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionAb", "w80m", "vh50q", "w50q", "w90m", "vh80m");
+    cuadrado.classList.add("opacidadBaja", "vh60", "w32", "posicionAb", "w80m", "vh50q", "w50q", "w90m", "vh50m");
     caja.appendChild(cuadrado);
     
     let customerTotal = document.createElement("div");
