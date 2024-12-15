@@ -67,77 +67,74 @@
             <!--EL TAMAÑO NO ES CORRECTO, PERO USE LA CLASE UTIL-->
         </section>
 
-        <!--LETS GET IN TOUCH--><!--SACAR DE INDEX-->
+        <!--LETS GET IN TOUCH-->
+        <section class="w78 section bordeBottomGris bordeTopGris bordeLeftGris bordeRightGris vh80 df centerX centerY vh90q w90m vh120m ">
 
-        <section class="w78 section bordeBottomGris bordeLeftGris bordeRightGris bordeTopGris vh80 df centerX centerY">
+            <div class="df w80 spaceb dfQ columnaQ spaceAq w90q vh90q flexStartm flexdcolm vh100m">
 
-            <div class="df w80 spaceb dfQ columnaQ spaceAq">
-
-            <div class="df columna w32 h20 spacea w80q">
-
-                <div class="lineaNaranja posicionRel df centerY h8 h6q">
-                <h3 class="titIntermedio droidSerif">Let’s Get in Touch</h3>
-                </div>
-
-                <p class="parrafos openSans">Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads.</p>
-                <a class="chicos bottomNegro fitContent colorNegro openSans" href="email.com">EMAIL@FLORIA.COM</a>
+            <div class="df columna w32 h20 spacea w100q">
+                
+                    <h3 class="titIntermedio droidSerif lineaNaranja posicionRel df centerX fStart hIconos">Let’s Get in Touch</h3>
+                
+                <p class="parrafos marginTop1m openSans">Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads.</p>
+                <a class="chicos bottomNegro colorNegro fitContent openSans" href="email.com">EMAIL@FLORIA.COM</a>
 
                 <!--íconos-->
-                <div class="df hIconos2 w50 spaceb w45q w80m">
-                <a class="redondel df centerX centerY" href="">
-                    <i class="fa-brands fa-twitter colorNegro"></i>
-                </a>
-
-                <a class="redondel df centerX centerY" href="">
-                    <i class="fa-brands fa-facebook colorNegro"></i>
-                </a>
-
-                <a class="redondel df centerX centerY" href="">
-                    <i class="fa-brands fa-instagram colorNegro"></i>
-                </a>
-
-                <a class="redondel df centerX centerY" href="">
-                    <i class="fa-brands fa-pinterest colorNegro"></i>
-                </a>
+                <div class="df hIconos2 w60 spaceb w30q marginTop1m w50m">
+                    <a class="redondel df centerX centerY" href="https://x.com/?lang=es">
+                        <i class="fa-brands fa-twitter colorNegro"></i>
+                    </a>
+    
+                    <a class="redondel df centerX centerY" href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook colorNegro"></i>
+                    </a>
+    
+                    <a class="redondel df centerX centerY" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram colorNegro"></i>
+                    </a>
+    
+                    <a class="redondel df centerX centerY" href="https://ar.pinterest.com/">
+                        <i class="fa-brands fa-pinterest colorNegro"></i>
+                    </a>
                 </div>
 
             </div>
 
             <!--formulario-->
             <div class="df columna w60 h24 w100q marginTop1m">
-                <div class="h100 dfQ columnaQ vh40q">
-            
-                <form class="h90 df columna spaceb vh40q" action="/index.html">
+    
+                <form class="vh df columna spaceb" action="/index.html">
 
                     <div class="df spaceb">
-                    <input class="w48-7 hForms sinBorde fondoForms" type="text" id="name" name="name" placeholder="Your name" required>
-                    <input class="w48-7 hForms sinBorde fondoForms" type="email" id="email" name="email" placeholder="Email address" required>
+                        <input class="w48-7 hForms sinBorde fondoForms" type="text" id="name" name="name" placeholder="Your name" for="name" required>
+                        <input class="w48-7 hForms sinBorde fondoForms" type="email" id="email" for="email" name="email" placeholder="Email address" required>
                     </div>
 
-                    <input class="w100 hForms fondoForms sinBorde" type="tel" id="phone" name="phone" placeholder="Contact Phone" required>
-                    <input class=" fondoForms w100 altura12 sinBorde" type="textarea" id="description" name="description" placeholder="Describe your project..." required>
+                        <input class="w100 hForms fondoForms sinBorde" type="tel" id="phone" name="phone" for="phone" placeholder="Contact Phone" required>
+                        <input class=" fondoForms w100 altura12 sinBorde" type="textarea" id="description" for="description" name="description" placeholder="Describe your project..." required>
                 
-                    <input class="botonesHomeNaranja fitContent sinBorde colorBlanco fontBotones paddingBotones fondoNaranja" type="submit" value="Submit Message">
+                    <button id="botonSubmitLargo" class="botonesHomeNaranja fitContent sinBorde fondoNaranja colorBlanco fontBotones paddingBotones" type="submit" value="Submit Message">Submit</button>
 
+                    <p class="openSans parrafos" id="acaError"></p>
+                    <p class="openSans parrafos" id="acaExito"></p>
+                    
                 </form>
-            </div>
 
-            </div>
-
+        </div>
         </div>
         </section>
 
         <!--WE'RE ON INSTAGRAM-->
         <section class="w100 vh60 columna spacea vh70q">
             
-            <div class="df columna centerY h8 spacea lineaNaranja posicionRel">
+            <div class="df columna centerY h8 spacea ">
                 <h4 class="chicos openSans">follow us</h4>
-                <h2 class="titulos droidSerif">We're on Instagram</h2>
+                <h2 class="titulos droidSerif lineaNaranja posicionRel df centerX hIconos">We're on Instagram</h2>
             </div>
 
-            <div class="df h50 dfQ tacoQ wrapm marginTop1m">
+            <div id="contInstagram" class="df h50 dfQ tacoQ wrapm marginTop1m">
                  
-                    <img class="w12_5 w25q h50q w25m" src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje">
+                    <!--<a class="w12_5 w25q h50q w25m" href=""><img  src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje"></a>
 
                     <img class="w12_5 w25q h50q w25m" src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje">
 
@@ -151,7 +148,7 @@
 
                     <img class="w12_5 w25q h50q w25m" src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje">
 
-                    <img class="w12_5 w25q h50q w25m" src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje">
+                    <img class="w12_5 w25q h50q w25m" src="assets/imgs/instagram/hombre-sombrero-montaña.jpg" alt="Hombre con sombrero mirando un paisaje">-->
 
             </div>
             
@@ -172,15 +169,16 @@
         <div class="w60 df spaceb centerY w100q w100m flexdcolm dfm marginTop1m">
                 <p class="subtitulos w100m textoLinea droidSerif">Subscribe to our newsletter</p>
         
-        <form class="df marginTop1m" action="/index.html">
-            <input class="sinBorde hForms fondoForms" type="text" id="yname" name="yname" placeholder ="Your name" required>
-            <input class="sinBorde hForms fondoForms" type="email" id="email" name="email" placeholder="Email address" required>
-            <button class="sinBorde paddingBotones hForms df centerX centerY fondoNegro">
-                <i class="fa-solid fa-chevron-right colorBlanco"></i>
-            </button>
-
-            
-        </form>
+                <form class="df marginTop1m spaceb" action="/index.html">
+                    <input class="sinBorde hForms fondoForms" type="text" id="yname" name="yname" for="yname" placeholder ="Your name" required>
+                    <input class="sinBorde hForms fondoForms" type="email" id="ymail" name="ymail" for="ymail" placeholder="Email address" required>
+                    <button id="botonFooter" class="sinBorde paddingBotones hForms df centerX centerY fondoNegro">
+                        <i class="fa-solid fa-chevron-right colorBlanco"></i>
+                    </button>
+                    <p class="openSans parrafitos" id="acaErrorFooter"></p>
+                    <p class="openSans parrafitos" id="acaExitoFooter"></p>
+      
+                </form>
         </div>
 
         </div>
@@ -271,6 +269,9 @@
         </div>
 
     </footer>
+
+    <script src="assets/js/contact.js"></script>
+
 </body>
 
 </html>

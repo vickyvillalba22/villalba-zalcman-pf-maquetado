@@ -660,7 +660,7 @@ function validar_form_largo(event){
         if (campoNombre.value.length > 3 && 
             campoEmail.value.indexOf("@") !== -1 && 
             campoEmail.value.indexOf(".") !== -1 && 
-            campoEmail.value.indexOf("@") < campoEmail.value.indexOf(".") && 
+            campoEmail.value.indexOf("@") < campoEmail.value.lastIndexOf(".") && 
             campoTelefono.value.length > 5 && 
             campoTelefono.value.indexOf("+") !== -1 && 
             campoDesc.value.length > 10){
