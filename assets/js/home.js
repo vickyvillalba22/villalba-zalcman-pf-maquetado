@@ -53,6 +53,15 @@ const carrusel=[
     //boton !! capaz hay que ponerle hacia donde va
     let botonBanner = document.createElement("button");
     botonBanner.classList.add("paddingBotones", "fondoBlanco", "fontBotones", "sinBorde", "fitContent");
+    botonBanner.setAttribute("href", "#someWorks");
+
+    
+    let sectionWorks = document.getElementById("someWorks");
+
+    botonBanner.addEventListener("click", () => {
+        sectionWorks.scrollIntoView({ behavior: "smooth" });
+    });
+
     divBanner.appendChild(botonBanner);
 
 
@@ -122,7 +131,7 @@ let trabajos = document.getElementById("ourWorks");
 
 const artPortfolio=[
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/crema.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Mobile",
@@ -131,7 +140,7 @@ const artPortfolio=[
     },
 
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/cuadro.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Branding",
@@ -140,7 +149,7 @@ const artPortfolio=[
     },
 
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/tenis.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Website",
@@ -149,7 +158,7 @@ const artPortfolio=[
     },
 
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/cartera.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Mobile",
@@ -158,7 +167,7 @@ const artPortfolio=[
     },
 
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/almohada-pajaro-flor.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Website",
@@ -167,7 +176,7 @@ const artPortfolio=[
     },
 
     {
-        link:"COMPLETAR",
+        link:"single-work.html",
         imagenSrc:"./assets/imgs/disco.jpg",
         imagenAlt:"crema con plantas y flores",
         h4:"Branding",
@@ -458,7 +467,7 @@ function generar_servicios(){
             let learnMore = document.createElement("a");
             learnMore.innerHTML = "Learn More"
             learnMore.classList.add("chicos", "bottomNegro", "colorNegro", "fitContent", "openSans");
-            learnMore.setAttribute("href", "home.html");
+            learnMore.setAttribute("href", "about.html");
             contInfo.append(titulo, parrafo, learnMore);
 
         articulo.append(contVector, contInfo);
@@ -607,59 +616,71 @@ function validar_form_largo(event){
 
     event.preventDefault();
 
-    campoError.innerHTML = ""; // Limpiar cualquier error previo
+    campoError.innerHTML = "";
 
-    campoNombre.addEventListener('change', validar_nombre);
-    campoEmail.addEventListener('change', validar_mail);
-    campoTelefono.addEventListener('change', validar_telefono);
-    campoDesc.addEventListener('change', validar_desc);
-
-    function validar_nombre(){
+        //nombre
         if (campoNombre.value.length < 3) {
             campoNombre.classList.add("bordeRojo")
-            campoError.innerHTML += "El nombre debe contener al menos 3 caracteres"
+            campoError.innerHTML += "El nombre debe contener al menos 3 caracteres. "
         } else {
+            campoNombre.classList.remove("bordeRojo");
             campoNombre.classList.add("bordeVerde");
         }
-    }
 
-
-    function validar_mail(){
+        //mail
         if (campoEmail.value.indexOf("@") === -1 || 
         campoEmail.value.indexOf(".") === -1 || 
         campoEmail.value.indexOf("@") > campoEmail.value.lastIndexOf(".")) {
-        campoError.innerHTML += "El email debe contener '@' y '.' correctamente ubicados.";
-        campoEmail.classList.add("bordeRojo")
+            campoError.innerHTML += "El email debe contener '@' y '.' correctamente ubicados. ";
+            campoEmail.classList.add("bordeRojo")
         } else {
+            campoEmail.classList.remove("bordeRojo");
             campoEmail.classList.add("bordeVerde");
         }
-    }
 
 
-    function validar_telefono(){
+        //telefono
         if (campoTelefono.value.length < 5 || campoTelefono.value.indexOf("+") === -1) {
-            campoError.innerHTML += "El teléfono debe contener '+' y al menos 5 caracteres.";
+            campoError.innerHTML += "El teléfono debe contener '+' y al menos 5 caracteres. ";
             campoTelefono.classList.add("bordeRojo");
         } else {
+            campoTelefono.classList.remove("bordeRojo");
             campoTelefono.classList.add("bordeVerde");
         }
-    }
+    
 
-    function validar_desc(){
+        //descripcion
         if (campoDesc.value.length < 10) {
-            campoError.innerHTML += "La descripción debe tener al menos 10 caracteres.";
+            campoError.innerHTML += "La descripción debe tener al menos 10 caracteres. ";
             campoDesc.classList.add("bordeRojo");
         } else {
+            campoDesc.classList.remove("bordeRojo");
             campoDesc.classList.add("bordeVerde");
         }
-    }
+
+        //validar todo
+        if (campoNombre.value.length > 3 && 
+            campoEmail.value.indexOf("@") !== -1 && 
+            campoEmail.value.indexOf(".") !== -1 && 
+            campoEmail.value.indexOf("@") < campoEmail.value.indexOf(".") && 
+            campoTelefono.value.length > 5 && 
+            campoTelefono.value.indexOf("+") !== -1 && 
+            campoDesc.value.length > 10){
+
+                campoNombre.classList.add("bordeVerde");
+                campoEmail.classList.add("bordeVerde");
+                campoTelefono.classList.add("bordeVerde");
+                campoDesc.classList.add("bordeVerde");
+
+                campoError.innerHTML = "";
+                campoExito.innerHTML = "Form submitted!"
+                
+        }
+  
 
 }
 
 botonEnviarLargo.addEventListener('click', validar_form_largo);
-
-
-
 
 
 /*FROM OUR BLOG*/
@@ -789,3 +810,57 @@ function generarBlog(){
 }
 
 generarBlog(); 
+
+/*FOOTER - FORM CORTO*/
+
+let campoNombreFooter = document.getElementById("yname");
+let campoMailFooter = document.getElementById("ymail");
+
+let campoErrorFooter = document.getElementById("acaErrorFooter");
+let campoExitoFooter = document.getElementById("acaExitoFooter");
+
+let botonSubmitFooter = document.getElementById("botonFooter");
+
+function validar_form_footer(event){
+
+    event.preventDefault();
+
+    campoErrorFooter.innerHTML = "";
+    campoExitoFooter.innerHTML = "";
+
+    //nombre
+    if (campoNombreFooter.value.length < 3) {
+        campoNombreFooter.classList.add("bordeRojo")
+        campoErrorFooter.innerHTML += "El nombre debe contener al menos 3 caracteres. "
+    } else {
+        campoNombreFooter.classList.remove("bordeRojo");
+        campoNombreFooter.classList.add("bordeVerde");
+    }
+
+    //mail
+    if (campoMailFooter.value.indexOf("@") === -1 || 
+    campoMailFooter.value.indexOf(".") === -1 || 
+    campoMailFooter.value.indexOf("@") > campoMailFooter.value.indexOf(".")) {
+        campoErrorFooter.innerHTML += "El email debe contener '@' y '.' correctamente ubicados. ";
+        campoMailFooter.classList.add("bordeRojo")
+    } else {
+        campoMailFooter.classList.remove("bordeRojo");
+        campoMailFooter.classList.add("bordeVerde");
+    }
+
+    if(campoNombreFooter.value.length > 3 && 
+        campoMailFooter.value.indexOf("@") !== -1 && 
+        campoMailFooter.value.indexOf(".") !== -1 && 
+        campoMailFooter.value.indexOf("@") < campoMailFooter.value.indexOf(".")){
+
+                campoNombreFooter.classList.add("bordeVerde");
+                campoMailFooter.classList.add("bordeVerde");
+
+                campoErrorFooter.innerHTML = "";
+                campoExitoFooter.innerHTML = "Form submitted!";
+
+        }
+
+}
+
+botonSubmitFooter.addEventListener('click', validar_form_footer);
