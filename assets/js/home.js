@@ -305,8 +305,6 @@ let cargo;
 let botonAnt;
 let botonSig;
 
-//creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales. Las lineas que crean elementos pueden quedar fuera de funciones porque no traen nada de otros lados.
-
 function generar_customers(caja){
 
     //console.log("hola")

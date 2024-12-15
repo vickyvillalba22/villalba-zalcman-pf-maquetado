@@ -66,16 +66,19 @@
             <!--estos son filtros, despues veremos como funcionan, lo rosa de "all" creo que va con eventos-->
             <div class="w100 centerX">
                 <div class="w40 df centerX spacea parrafos w80m openSans">
-            <h3>All</h3>
-            <h3>Branding</h3>
-            <h3>Mobile</h3>
-            <h3>Website</h3>
 
-        </div>
-        </div>
+                    <button class="fontBotones sinBorde fondoBlanco openSans" id="botonAll"><h3>All</h3></button>
+                    <button class="fontBotones sinBorde fondoBlanco openSans" id="botonBranding"><h3>Branding</h3></button>
+                    <button class="fontBotones sinBorde fondoBlanco openSans" id="botonMobile"><h3>Mobile</h3></button>
+                    <button class="fontBotones sinBorde fondoBlanco openSans" id="botonWebsite"><h3>Website</h3></button>
+
+                </div>
+            </div>
+
+            <div id="ourWorks" class="w100 w100m df spacea w90q dfm justifycontentcm taco"></div>
 
         <!--ESTA LA MISMA SECCION EN INDEX, COPIAR DE AHI-->
-        <article class="w32 tercio w100m">
+        <!--<article class="w32 tercio w100m">
  
                 <img class="w100" src="assets/imgs/crema.jpg" alt="crema con plantas y flores" width="" height="">
 
@@ -97,38 +100,20 @@
      
             <h4 class="chicos colorVerde openSans">Mobile</h4>
             <h3 class="subtitulos droidSerif">Marco Interactive</h3>
-        </article>
+        </article>-->
 
         </section>
 
         <!--CUSTOMERS ABOUT US--><!--seccion dinamica-->
 
-        <section class="vh100 w78 df columna spacee vh60q w90q w90m vh100m posicionRel">
+        <section class="vh100 w78 df columna spacee vh90 vh70q w100m justifycontentcm vh100m">
 
-            <div class="df columna centerX centerY h8 spacea lineaNaranja posicionRel w100m">
+            <div class="df columna centerX centerY h8 spacea">
                 <h4 class="chicos colorGris openSans">Testimonials</h4>
-                <h2 class="titulos droidSerif"> <strong> Customers </strong> About Us</h2>
+                <h2 class="titulos droidSerif lineaNaranja posicionRel df centerX hIconos"> <strong> Customers </strong> About Us</h2>
             </div>
 
-            <div class="df columna centerX centerY">
-
-                <div class="fondoGris opacidadBaja vh60 w32 posicionRel vh30q w90m vh50m"></div>
-                
-                    <div class="posicionAb df columna centerX centerY vh w66 spacea vh40q w90q vh50m">
-                  
-                        <img class="redonda" src="assets/imgs/chica-pelirroja.jpg" alt="">
-               
-                        <div class="lineaNegra posicionRel df centerX h8 vh30m vh20q">
-                        <p class="parrafoTitulo fontSize1-5m w70q">“Magazine advertising is the most versatile, but this is solely dependent on the size of your ad and how many other ads compete with yours.”</p> 
-                        </div>
-
-                        <div class="df">
-                            <h4 class="parrafos openSans">Sophia Allison</h4> <h4 class="parrafos colorGris openSans"> —  CEO of Marco Inc.</h4>
-                        </div>
-
-                    </div>
-
-                </div>
+            <div id="custAboutUs" class="df columna centerX centerY vh spaceb w100 posicionRel w100m vh50q marginTop3m">
 
                 <div class="w100 h100 df spaceb posicionAb">
                     <button id="anterior" class="sinBorde fondoBlanco displayNonem">
@@ -140,6 +125,8 @@
                     </button>
                 </div>
 
+            </div>
+
         </section>
 
         <!--READY TO START?-->
@@ -148,7 +135,7 @@
 
             <div class="w40 df columna centerX centerY textCenter w90m">
             <h3 class="titulos fontSize1-2m lineHM droidSerif">Are you ready to start with Floria Template?</h3>
-            <button class="sinBorde fitContent paddingBotones fontBotones fondoVerde colorBlanco botonRedondo">Buy Template</button>
+            <button class="sinBorde fitContent paddingBotones fontBotones fondoVerde colorBlanco botonRedondo"><a class="colorBlanco" href="contact.html">Buy Template</a></button>
             </div>
 
         </section>
@@ -168,15 +155,16 @@
         <div class="w60 df spaceb centerY w100q w100m flexdcolm dfm marginTop1m">
                 <p class="subtitulos colorBlanco w100m textoLinea droidSerif">Subscribe to our newsletter</p>
         
-        <form class="df marginTop1m" action="/index.html">
-            <input class="sinBorde hForms fondoForms" type="text" id="yname" name="yname" placeholder ="Your name" required>
-            <input class="sinBorde hForms fondoForms" type="email" id="email" name="email" placeholder="Email address" required>
-            <button class="sinBorde paddingBotones hForms df centerX centerY">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
-
-            
-        </form>
+                <form class="df marginTop1m spaceb" action="/index.html">
+                    <input class="sinBorde hForms fondoForms colorBlanco" type="text" id="yname" name="yname" for="yname" placeholder ="Your name" required>
+                    <input class="sinBorde hForms fondoForms colorBlanco" type="email" id="ymail" name="ymail" for="ymail" placeholder="Email address" required>
+                    <button id="botonFooter" class="sinBorde paddingBotones hForms df centerX centerY">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <p class="openSans colorBlanco parrafitos" id="acaErrorFooter"></p>
+                    <p class="openSans colorBlanco parrafitos" id="acaExitoFooter"></p>
+      
+                </form>
         </div>
 
         </div>
@@ -267,6 +255,8 @@
         </div>
 
     </footer>
+
+    <script src="assets/js/portfolio.js"></script>
 
     
 </body>
