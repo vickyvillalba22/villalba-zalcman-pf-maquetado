@@ -144,6 +144,10 @@ nav ul li.active{
     min-height: 60vh;
 }
 
+.vh70fijo{
+    height: 70vh;
+}
+
 .vh{
     min-height: 50vh;
 }
@@ -348,16 +352,8 @@ img{
     border: 3px solid purple;
 }
 
-.bordeVerde{
-    border:  3px solid green;
-}
-
 .bordeNaranja{
     border: 3px solid orange;
-}
-
-.bordeRojo{
-    border: 3px solid red;
 }
 
 .bordeRadious50{
@@ -574,6 +570,14 @@ img{
     border: none;
 }
 
+.bordeVerde{
+    border: 2px solid #9fbf73;
+}
+
+.bordeRojo{
+    border: 2px solid red;
+}
+
 .fondoForms {
     background-color: rgba(128, 128, 128, 0.132);
 }
@@ -595,8 +599,8 @@ input{
     position: absolute;
     bottom: 0;
     background-color: orange;
-    height: 0.16em;
-    width: 6em;  
+    height: 0.1em;
+    width: 3em;  
 }
 
 .lineaBlanca::after{

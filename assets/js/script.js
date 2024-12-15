@@ -57,7 +57,7 @@ let artPortfolio=[
     }
 ]
 
-export function generarPortfolio(contenedorPortfolio, cantidad){
+function generarPortfolio(contenedorPortfolio, cantidad){
    
     for(let i=0; i<cantidad; i++){
         let articulo=document.createElement("article"); //creo el articulo
@@ -137,7 +137,6 @@ const customers = [
 ];
 
 const colores = ["fondoNaranja", "fondoVioleta", "fondoRosa"];
-//const colores_lineas = ["colorNaranja", "colorVioleta", "colorRosa"];
 
 //defino las variables que se reutilizarán y actualizarán
 let currentClient = 0;
@@ -151,7 +150,7 @@ let botonSig;
 
 //creo y appendchileo todos los elementos html sin contenido pero con sus respectivas clases generales. Las lineas que crean elementos pueden quedar fuera de funciones porque no traen nada de otros lados.
 
-export function generar_customers(caja){
+function generar_customers(caja){
 
     //console.log("hola")
     
@@ -190,7 +189,7 @@ export function generar_customers(caja){
 }
 
 
-export function logica_customers(){
+function logica_customers(){
     //llamo a la función de actualizar contenido para que ya cargue lo que se ve primero.
     updateClient();
 
@@ -281,7 +280,7 @@ const arrayBlog=[
     
 ]
 
-export function generarBlog(contenedor){
+function generarBlog(contenedor){
     
     for(let i=0; i<arrayBlog.length; i++){
         let articulo=document.createElement("article"); //creo el articulo
