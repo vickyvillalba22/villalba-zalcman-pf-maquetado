@@ -687,7 +687,7 @@ let contenedorBlog = document.getElementById("contenedorOurBlog");
 
 const arrayBlog=[
     {
-        link: "marketing.html",
+        link: "blog.html",
         imagenSrc: "assets/imgs/libros-lampara-rara.jpg",
         imagenAlt: "cuadro que dice today is awesome, con lampara rara",
         h3Texto: "Marketing",
@@ -700,7 +700,7 @@ const arrayBlog=[
     },
 
     {
-        link: "design.html",
+        link: "blog.html",
         imagenSrc: "assets/imgs/pochoclos-jean.jpg",
         imagenAlt: "persona comiendo pochoclos",
         h3Texto: "Design",
@@ -713,7 +713,7 @@ const arrayBlog=[
     },
 
     {
-        link: "design.html",
+        link: "blog.html",
         imagenSrc: "assets/imgs/notebook-flores-rosas.jpg",
         imagenAlt: "cuadro que dice today is awesome, con lampara rara",
         h3Texto: "Productivity",
