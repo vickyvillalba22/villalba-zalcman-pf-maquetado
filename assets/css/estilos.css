@@ -83,6 +83,26 @@ dialog{
     padding: 5px;
 }
 
+/*DARK MODE*/
+
+.fondoNegro{
+    background-color: rgb(0, 5, 16);
+}
+
+.fondoBlanco{
+    background-color: white;
+}
+
+.colorNegro{
+    color: rgb(0, 5, 16);
+}
+
+.colorBlanco{
+    color: white;
+}
+
+
+
 .w100{
     width:100%;
 }
@@ -488,14 +508,6 @@ img{
 
 /*COLORES*/
 
-.colorNegro{
-    color: black;
-}
-
-.colorBlanco{
-    color: white;
-}
-
 .colorGris{
     color: gray;
 }
@@ -518,14 +530,6 @@ img{
 
 .fondoVioleta{
     background-color: #9689ce;
-}
-
-.fondoNegro{
-    background-color: black;
-}
-
-.fondoBlanco{
-    background-color: white;
 }
 
 .fondoNaranja{
@@ -710,7 +714,7 @@ main section{
     width: 34em;
 }
 .cuadradoGris{
-    border: 12px solid #f6f6f6;
+    border: 12px solid #9a9898;
     height: 16em;
     width: 24em;
 }

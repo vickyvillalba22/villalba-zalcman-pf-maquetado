@@ -920,4 +920,52 @@ fotos.forEach((imagen)=>{
 
 });*/
 
+/*DARK MODE*/
+
+let cabeza = document.querySelector("header");
+let cuerpo = document.querySelector("main");
+
+const parrafos = document.querySelectorAll("main p");
+const titulos = document.querySelectorAll("main h2");
+const subtitulos = document.querySelectorAll("main h3");
+const chiquitos = document.querySelectorAll("main h4");
+const listas = document.querySelectorAll("main ul");
+const iconosForm = document.querySelectorAll(".iconoForm");
+
+let botonToggle = document.getElementById("botonDarkMode");
+botonToggle.innerText = "Dark";
+
+botonToggle.addEventListener('click', ()=>{
+
+    cuerpo.classList.toggle("fondoNegro");
+    cabeza.classList.toggle("fondoNegro");
+
+    parrafos.forEach((parrafo)=>{
+        parrafo.classList.toggle("colorBlanco");
+    });
+
+    titulos.forEach((titulo)=>{
+        titulo.classList.toggle("colorBlanco");
+    });
+
+    subtitulos.forEach((subtitulo)=>{
+        subtitulo.classList.toggle("colorBlanco");
+    });
+
+    chiquitos.forEach((chiquito)=>{
+        chiquito.classList.toggle("colorBlanco");
+    });
+
+    listas.forEach((lista)=>{
+        lista.classList.toggle("colorBlanco");
+    });
+
+    iconosForm.forEach((iconoForm)=>{
+        iconoForm.classList.toggle("colorBlanco")
+    });
+
+
+
+});
+
 
