@@ -1,3 +1,7 @@
+/*MAIN*/
+
+let cuerpo = document.querySelector("main");
+
 /*FROM OUR BLOG CON FILTROS*/
 
 let contenedorBlog = document.getElementById("contenedorOurBlog");
@@ -154,7 +158,8 @@ function generarBlog(inicio, cantidad, filtro=null){
 
         let h2=document.createElement("h2"); 
         h2.innerText=(arrayBlog[i].h2);
-        h2.classList.add("titIntermedio", "droidSerif");
+        h2.classList.add("titIntermedio", "droidSerif", "colorGris");
+
         div.appendChild(h2); //agrego el h2 al div contenedor
 
         let p=document.createElement("p"); 
@@ -177,7 +182,8 @@ function generarBlog(inicio, cantidad, filtro=null){
 
         let fecha=document.createElement("p"); 
         fecha.innerText=(arrayBlog[i].fecha);  
-        fecha.classList.add("chicos", "openSans");
+        fecha.classList.add("chicos", "openSans", "colorGris");
+
         divFoto.appendChild(fecha);
 
         let foto=document.createElement("img"); //creo imagen
@@ -187,7 +193,8 @@ function generarBlog(inicio, cantidad, filtro=null){
 
         let nombre=document.createElement("p"); 
         nombre.innerText=(arrayBlog[i].nombre);  
-        nombre.classList.add("chicos", "openSans");
+        nombre.classList.add("chicos", "openSans", "colorGris");
+
         divFoto.appendChild(nombre); 
 
         divInferior.appendChild(divFoto);
@@ -374,7 +381,7 @@ icons.forEach((icon)=>{
 
 let cabeza = document.querySelector("header");
 let navCabeza = document.querySelector("header nav");
-let cuerpo = document.querySelector("main");
+
 
 const parrafos = document.querySelectorAll("main p");
 const titulos = document.querySelectorAll("main h2");

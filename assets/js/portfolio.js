@@ -93,7 +93,7 @@ function generarPortfolio(filtro=null){
     
         let h3=document.createElement("h3");
         h3.innerText=(artPortfolio[i].h3);
-        h3.classList.add("subtitulos", "droidSerif");
+        h3.classList.add("subtitulos", "droidSerif", "colorGris");
         articulo.appendChild(h3);
     
         trabajos.appendChild(articulo);
