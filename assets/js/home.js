@@ -247,13 +247,13 @@ let contLogos = document.getElementById("contenedorLogos");
 
 function armarLogos(){
 
-    for (let i=0; i<arrayLogos.length; i++){
+    for (let logo of arrayLogos){
 
         let linkLogo = document.createElement("a");
         linkLogo.classList.add("w30q", "w40m");
 
         let imagenLogo = document.createElement("img");
-        imagenLogo.setAttribute("src", arrayLogos[i]);
+        imagenLogo.setAttribute("src", logo);
         imagenLogo.classList.add("logos", "w100m");
     
         linkLogo.appendChild(imagenLogo);
