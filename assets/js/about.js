@@ -4,22 +4,85 @@ const galeriaImgs = [["assets/imgs/tres-personas.jpeg", "Hombre caminando por el
 
 let contImagenes = document.getElementById("galeriaImagenes");
 
-function armar_galeria_imgs(){
+let contModal = document.getElementById("modalGaleria");
+
+let imagenPrincipal = document.getElementById("imagenPrincipalModal");
+let descripcionImg = document.getElementById("descImagen");
+let flechaIzquierda = document.getElementById("flechaIzquierda");
+let flechaDerecha = document.getElementById("flechaDerecha");
+
+let galeriaFila = document.getElementById("galeriaLinea");
+let botonCerrarModal = document.getElementById("botonCerrarModal");
+let position;
+
+function mostrar_modal(){
+
+    position = this.getAttribute("posicion");
+
+    imagenPrincipal.setAttribute("src", galeriaImgs[position][0]);
+    descripcionImg.innerText = galeriaImgs[position][1];
+
+    galeriaFila.innerHTML = "";
+
+    armar_galeria_imgs("w25", galeriaFila);
+
+    contModal.showModal();
+
+}
+
+function armar_galeria_imgs(ancho, contenedor){
 
     for(let i=0; i<galeriaImgs.length; i++){
 
         let imagen = document.createElement("img");
-        imagen.classList.add("w50", "w100m");
+        imagen.classList.add(ancho, "w100m");
         imagen.setAttribute("src", galeriaImgs[i][0]); 
         imagen.setAttribute("alt", galeriaImgs[i][1]);
 
-        contImagenes.appendChild(imagen);
+        imagen.setAttribute("posicion", i);
+
+        imagen.addEventListener('click', mostrar_modal);
+
+        contenedor.appendChild(imagen);
         
     }
 
 }
 
-armar_galeria_imgs();
+armar_galeria_imgs("w50", contImagenes);
+
+botonCerrarModal.addEventListener('click', ()=>{
+    contModal.close();
+});
+
+flechaDerecha.addEventListener('click', siguiente);
+flechaIzquierda.addEventListener('click', anterior);
+
+function siguiente(){
+
+    position++;
+
+    if (position>galeriaImgs.length-1){
+        position=0;
+    }
+
+    imagenPrincipal.setAttribute("src", galeriaImgs[position][0]);
+    descripcionImg.innerText = galeriaImgs[position][1];
+}
+
+function anterior(){
+
+    position--;
+
+    if (position<0){
+        position = galeriaImgs.length - 1;
+    }
+
+    imagenPrincipal.setAttribute("src", galeriaImgs[position][0]);
+    descripcionImg.innerText = galeriaImgs[position][1];
+}
+
+
 
 /*OUR AMAZING TEAM*/
 

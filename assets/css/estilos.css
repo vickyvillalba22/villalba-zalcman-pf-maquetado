@@ -60,6 +60,11 @@ nav ul li.active{
     border-radius: 15px;
 }
 
+dialog{
+    top: 10%;
+    left: 25%;
+}
+
 .w100{
     width:100%;
 }
