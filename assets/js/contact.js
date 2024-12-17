@@ -200,3 +200,38 @@ function validar_form_footer(event){
 }
 
 botonSubmitFooter.addEventListener('click', validar_form_footer);
+
+
+/*TOOLTIPS*/
+
+const tooltips = [
+    "Haz clic para continuar",
+    "Guarda los cambios aquí",
+    "Elimina este elemento",
+    "Más opciones disponibles",
+    "Completa este campo",
+    "Información adicional",
+    "Revisa la configuración",
+    "Ver detalles",
+    "Descarga el archivo",
+    "Actualiza la página"
+  ];
+
+const icons = document.querySelectorAll("i");
+
+icons.forEach((icon)=>{
+
+
+    icon.addEventListener('mouseover', ()=>{
+
+        let textoTooltip = tooltips[3];
+        icon.setAttribute("data-tooltip", textoTooltip);
+        icon.classList.add("tooltip");
+
+    });
+
+    icon.addEventListener('mouseout', ()=>{
+        icon.classList.remove("tooltip");
+    })
+
+});

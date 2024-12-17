@@ -65,6 +65,24 @@ dialog{
     left: 25%;
 }
 
+.tooltip{
+    position: relative; 
+}
+
+.tooltip::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Coloca el tooltip arriba del elemento */
+    left: 50%; /* Centra horizontalmente */
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+    white-space: nowrap; /* Evita saltos de línea */
+    padding: 5px;
+}
+
 .w100{
     width:100%;
 }
