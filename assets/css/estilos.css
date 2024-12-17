@@ -101,6 +101,19 @@ dialog{
     color: white;
 }
 
+.fondoTransparente{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header.fondoNegro {
+    background-color: black;
+    color: white;
+}
+
+.active.fondoRosa{
+    background-color: rgb(101, 49, 58);
+}
+
 
 
 .w100{

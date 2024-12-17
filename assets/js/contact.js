@@ -235,3 +235,80 @@ icons.forEach((icon)=>{
     })
 
 });
+
+/*DARK MODE*/
+
+let cabeza = document.querySelector("header");
+let navCabeza = document.querySelector("header nav");
+let cuerpo = document.querySelector("main");
+let pies = document.querySelector("footer");
+
+const parrafos = document.querySelectorAll("main p");
+const titulos = document.querySelectorAll("main h2");
+const subtitulos = document.querySelectorAll("main h3");
+const chiquitos = document.querySelectorAll("main h4");
+const listas = document.querySelectorAll("main ul");
+const navUl = document.querySelectorAll("header nav li a");
+const activo = document.querySelectorAll(".active");
+const iconosForm = document.querySelectorAll(".iconoForm");
+const botonesRebeldes = document.querySelectorAll(".botonRebelde");
+
+const linksFooter = document.querySelectorAll("footer a");
+
+let botonToggle = document.createElement("button");
+botonToggle.classList.add("sinBorde", "fondoNaranja", "paddingBotones", "botonRedondo", "fontBotones");
+botonToggle.innerHTML = "Cambiar modo";
+
+navCabeza.appendChild(botonToggle);
+
+botonToggle.addEventListener('click', ()=>{
+
+    cuerpo.classList.toggle("fondoNegro");
+
+    cabeza.classList.toggle("fondoNegro");
+
+    pies.classList.toggle("fondoNegro");
+    pies.classList.toggle("colorBlanco");
+
+    linksFooter.forEach((link)=>{
+        link.classList.toggle("colorBlanco");
+    });
+
+    parrafos.forEach((parrafo)=>{
+        parrafo.classList.toggle("colorBlanco");
+    });
+
+    titulos.forEach((titulo)=>{
+        titulo.classList.toggle("colorBlanco");
+    });
+
+    subtitulos.forEach((subtitulo)=>{
+        subtitulo.classList.toggle("colorBlanco");
+    });
+
+    chiquitos.forEach((chiquito)=>{
+        chiquito.classList.toggle("colorBlanco");
+    });
+
+    listas.forEach((lista)=>{
+        lista.classList.toggle("colorBlanco");
+    });
+
+    iconosForm.forEach((iconoForm)=>{
+        iconoForm.classList.toggle("colorBlanco");
+    });
+
+    botonesRebeldes.forEach((boton)=>{
+        boton.classList.toggle("colorBlanco");
+    });
+
+    navUl.forEach((li)=>{
+        li.classList.toggle("colorBlanco");
+    });
+
+    activo.forEach((act)=>{
+        act.classList.toggle("fondoRosa");
+    })
+
+
+});

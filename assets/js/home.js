@@ -923,6 +923,7 @@ fotos.forEach((imagen)=>{
 /*DARK MODE*/
 
 let cabeza = document.querySelector("header");
+let navCabeza = document.querySelector("header nav");
 let cuerpo = document.querySelector("main");
 
 const parrafos = document.querySelectorAll("main p");
@@ -930,14 +931,21 @@ const titulos = document.querySelectorAll("main h2");
 const subtitulos = document.querySelectorAll("main h3");
 const chiquitos = document.querySelectorAll("main h4");
 const listas = document.querySelectorAll("main ul");
+const navUl = document.querySelectorAll("header nav li a");
+const activo = document.querySelectorAll(".active");
 const iconosForm = document.querySelectorAll(".iconoForm");
+const botonesRebeldes = document.querySelectorAll(".botonRebelde");
 
-let botonToggle = document.getElementById("botonDarkMode");
-botonToggle.innerText = "Dark";
+let botonToggle = document.createElement("button");
+botonToggle.classList.add("sinBorde", "fondoNaranja", "paddingBotones", "botonRedondo", "fontBotones");
+botonToggle.innerHTML = "Cambiar modo";
+
+navCabeza.appendChild(botonToggle);
 
 botonToggle.addEventListener('click', ()=>{
 
     cuerpo.classList.toggle("fondoNegro");
+
     cabeza.classList.toggle("fondoNegro");
 
     parrafos.forEach((parrafo)=>{
@@ -961,9 +969,20 @@ botonToggle.addEventListener('click', ()=>{
     });
 
     iconosForm.forEach((iconoForm)=>{
-        iconoForm.classList.toggle("colorBlanco")
+        iconoForm.classList.toggle("colorBlanco");
     });
 
+    botonesRebeldes.forEach((boton)=>{
+        boton.classList.toggle("colorBlanco");
+    });
+
+    navUl.forEach((li)=>{
+        li.classList.toggle("colorBlanco");
+    });
+
+    activo.forEach((act)=>{
+        act.classList.toggle("fondoRosa");
+    })
 
 
 });
