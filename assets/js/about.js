@@ -464,6 +464,7 @@ const listas = document.querySelectorAll("main ul");
 const navUl = document.querySelectorAll("header nav li a");
 const activo = document.querySelectorAll(".active");
 const iconosForm = document.querySelectorAll(".iconoForm");
+const inputs = document.querySelectorAll("main input");
 const botonesRebeldes = document.querySelectorAll(".botonRebelde");
 
 let botonToggle = document.createElement("button");
@@ -477,6 +478,10 @@ botonToggle.addEventListener('click', ()=>{
     cuerpo.classList.toggle("fondoNegro");
 
     cabeza.classList.toggle("fondoNegro");
+
+    inputs.forEach((input)=>{
+        input.classList.toggle("colorBlanco");
+    });
 
     parrafos.forEach((parrafo)=>{
         parrafo.classList.toggle("colorBlanco");

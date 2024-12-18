@@ -215,7 +215,9 @@ const listas = document.querySelectorAll("main ul");
 const navUl = document.querySelectorAll("header nav li a");
 const activo = document.querySelectorAll(".active");
 const iconosForm = document.querySelectorAll(".iconoForm");
+const inputs = document.querySelectorAll("input");
 const botonesRebeldes = document.querySelectorAll(".botonRebelde");
+let viewLiveId = document.getElementById("viewLiveI");
 
 const linksFooter = document.querySelectorAll("footer a");
 
@@ -233,6 +235,12 @@ botonToggle.addEventListener('click', ()=>{
 
     pies.classList.toggle("fondoNegro");
     pies.classList.toggle("colorBlanco");
+
+    viewLiveId.classList.toggle("fondoNegro");
+
+    inputs.forEach((input)=>{
+        input.classList.toggle("colorBlanco");
+    });
 
     linksFooter.forEach((link)=>{
         link.classList.toggle("colorBlanco");

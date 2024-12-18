@@ -126,23 +126,56 @@ let botonMarca = document.getElementById("botonBranding");
 let botonMovil = document.getElementById("botonMobile");
 let botonWeb = document.getElementById("botonWebsite");
 
-// Evento del botón "Todos"
+botonTodos.classList.add("colorRosa");
+
+let botonesPortfolio;
+
+// all
 botonTodos.addEventListener("click", () => {
+
+    botonesPortfolio = document.querySelectorAll(".colorRosa");
+    botonesPortfolio.forEach((boton)=>{
+        boton.classList.remove("colorRosa");
+    });
+
+    botonTodos.classList.add("colorRosa");
+
     generarPortfolio();
 });
 
-// Evento del botón "Branding"
+// branding
 botonMarca.addEventListener("click", () => {
+
+    botonesPortfolio = document.querySelectorAll(".colorRosa");
+    botonesPortfolio.forEach((boton)=>{
+        boton.classList.remove("colorRosa");
+    });
+
+    botonMarca.classList.add("colorRosa");
     generarPortfolio("Branding");
 });
 
-// Evento del botón "Mobile"
+// mobile
 botonMovil.addEventListener("click", () => {
+
+    botonesPortfolio = document.querySelectorAll(".colorRosa");
+    botonesPortfolio.forEach((boton)=>{
+        boton.classList.remove("colorRosa");
+    });
+
+    botonMovil.classList.add("colorRosa");
     generarPortfolio("Mobile");
 });
 
-// Evento del botón "Website"
+// website
 botonWeb.addEventListener("click", () => {
+
+    botonesPortfolio = document.querySelectorAll(".colorRosa");
+    botonesPortfolio.forEach((boton)=>{
+        boton.classList.remove("colorRosa");
+    });
+
+    botonWeb.classList.add("colorRosa");
     generarPortfolio("Website");
 });
 

@@ -254,23 +254,66 @@ let botonMarketing = document.getElementById("marketing");
 let botonPro = document.getElementById("productivity");
 let botonTutorial = document.getElementById("tutorial");
 
+let botonesBlog;
+
 botonAll.addEventListener('click', ()=>{
+
+    botonesBlog = document.querySelectorAll(".colorRosa");
+    
+    botonesBlog.forEach((button)=>{
+        button.classList.remove("colorRosa");
+    })
+
+    botonAll.classList.add("colorRosa");
+
     generarBlog(0, 9);
 })
 
 botonDesign.addEventListener('click', ()=>{
+
+    botonesBlog = document.querySelectorAll(".colorRosa");
+    botonesBlog.forEach((button)=>{
+        button.classList.remove("colorRosa");
+    })
+
+    botonDesign.classList.add("colorRosa");
+
     generarBlog(0, 9, "Design");
 })
 
 botonMarketing.addEventListener('click', ()=>{
+
+    botonesBlog = document.querySelectorAll(".colorRosa");
+    botonesBlog.forEach((button)=>{
+        button.classList.remove("colorRosa");
+    })
+
+    botonMarketing.classList.add("colorRosa");
+
     generarBlog(0, 9, "Marketing");
 })
 
 botonPro.addEventListener('click', ()=>{
+
+    botonesBlog = document.querySelectorAll(".colorRosa");
+    botonesBlog.forEach((button)=>{
+        button.classList.remove("colorRosa");
+    })
+
+    botonPro.classList.add("colorRosa");
+
     generarBlog(0, 9, "Productivity");
 })
 
 botonTutorial.addEventListener('click', ()=>{
+
+    botonesBlog = document.querySelectorAll(".colorRosa");
+    botonesBlog.forEach((button)=>{
+        button.classList.remove("colorRosa");
+    })
+
+    botonTutorial.classList.add("colorRosa");
+
     generarBlog(0, 9, "Tutorial");
 })
 
